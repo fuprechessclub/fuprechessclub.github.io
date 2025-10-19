@@ -726,7 +726,7 @@ body.dark .logo-glow { text-shadow: 0 0 1px var(--glow), 0 0 1px var(--glow), 0 
   margin-top: 1rem;
   font-size: 1rem;
   font-style: italic;
-  color: var(--glow);
+  color: var(--accent);
   opacity: 0.9;
 }
 
@@ -3284,7 +3284,7 @@ body.dark .tournaments-info .note { color: #aaa; }
 
 
 .social-icon {
-  color: #fff; /* change to #000 if light background */
+  color:var(--text);
   font-size: 1.8rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }

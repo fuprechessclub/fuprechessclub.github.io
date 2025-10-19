@@ -1,5 +1,5 @@
 // ==========================================================
-// FUPRE Chess Club – App Service Worker (Stable Prompt Update)
+// FUPRE Chess Club – App Service Worker 
 // ----------------------------------------------------------
 // • Detects new version and notifies clients
 // • Prompts user to reload manually (no infinite loop)

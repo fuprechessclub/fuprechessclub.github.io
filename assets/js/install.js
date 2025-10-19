@@ -2,8 +2,6 @@
    FUPRE Chess Club – Install Controller (Smart Update Banner)
    ----------------------------------------------------------
    • Modern “Update available — Refresh” banner (no confirm())
-   • Install App flow unchanged
-   • One-time reload after user clicks “Refresh”
    ========================================================== */
 
 (() => {
@@ -60,7 +58,7 @@
 
   window.addEventListener("appinstalled", () => {
     localStorage.setItem(LS_PWA_FLAG, "true");
-    showToast("✅ Installation successful!", "success");
+    showToast("", "success");
     if (ctaLabel) ctaLabel.textContent = "Installation successful!";
     state = ACTION.idle;
     setTimeout(() => hide(), 1500);
@@ -102,7 +100,7 @@
     }
   }
 
-  // ✅ Install Button Click Handler
+  //  Install Button Click Handler
   if (cta) {
     cta.addEventListener("click", () => {
       const mode = cta.dataset.mode;
