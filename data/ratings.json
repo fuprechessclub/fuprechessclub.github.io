@@ -6,9 +6,7 @@
     "rapid": 2325,
     "blitz": 2042,
     "achievements": [
-      "🏆 FCC Champion",
-      "⚡ 33× Lightning Blitz Winner",
-      "⏱️ 10× Grand Rapid Winner"
+      "🏆 1×  VC Chess Cup Champion"
     ]
   },
   {
@@ -28,9 +26,7 @@
     "rapid": 2319,
     "blitz": 2134,
     "achievements": [
-      "🏆 2× FCC Champion",
-      "⚡ 37× Lightning Blitz Winner",
-      "⏱️ 14× Grand Rapid Winner"
+      "🏆 2×  VC Chess Cup Champion"
     ]
   },
 
@@ -41,7 +37,7 @@
     "rapid": 1683,
     "blitz": 1646,
     "achievements": [
-        
+      "🥇 1x FCL Winner",
       "⭐ Rising Star"
     ]
   },
@@ -53,9 +49,7 @@
     "level": 400,
     "rapid": 1507,
     "blitz": 1716,
-    "achievements": [
-      "⏱️ 1× Grand Rapid Winner"
-    ]
+    "achievements": []
   },
 
 
@@ -66,8 +60,7 @@
     "rapid": 1928,
     "blitz": 1794,
     "achievements": [
-      "⏱️ 2× Grand Rapid Winner",
-      "🥇 1x NACOS Winner"
+      "🥇 1x NACOS Chess Champion"
     ]
   },
 
@@ -78,9 +71,7 @@
     "rapid": 1968,
     "blitz": 1968,
     "achievements": [
-        "🥇 1x NSE Winner",
-        "⚡ 9× Lightning Blitz Winner",
-        "⏱️ 7× Grand Rapid Winner"
+        "🥇 1x NSE Chess Champion"
     ]
   },
 
@@ -248,7 +239,9 @@
     "level": 200,
     "rapid": 710,
     "blitz": 710,
-    "achievements": []
+    "achievements": [ 
+      "🥇 1x FCL Winner"
+    ]
   },
   
   {
@@ -257,8 +250,6 @@
     "level": "Alumni",
     "rapid": 1803,
     "blitz": 1731,
-    "achievements": [
-      "⏱️ 1× Grand Rapid Winner"
-    ]
+    "achievements": []
   }
 ]
