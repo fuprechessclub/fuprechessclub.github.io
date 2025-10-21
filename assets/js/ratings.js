@@ -72,6 +72,7 @@ function highlightMatch(text, query) {
   return text.replace(regex, "<mark>$1</mark>");
 }
 
+
 // Render Ratings Table (alphabetical, with highlight)
 function renderRatings(players, query = "") {
   const tableBody = document.querySelector("#ratings-table tbody");
@@ -81,21 +82,32 @@ function renderRatings(players, query = "") {
 
   alphabetical.forEach(player => {
     const row = document.createElement("tr");
+
+    // Convert achievements: emojis → Font Awesome icons
+    const achievementsHTML =
+      player.achievements.length > 0
+        ? highlightMatch(
+            player.achievements
+              .map(a =>
+                a
+                  .replace("🏆", '<i class="fa-solid fa-trophy" style="color:#facc15"></i>')
+                  .replace("🥇", '<i class="fa-solid fa-award" style="color:#f59e0b"></i>')
+                  .replace("⭐", '<i class="fa-solid fa-star" style="color:#22c55e"></i>')
+              )
+              .join("<br>"),
+            query
+          )
+        : "<span class='no-achievement'><i class='fa-solid fa-rocket'></i> No achievements yet</span>";
+
     row.innerHTML = `
       <td data-label="Player">${highlightMatch(player.name, query)}</td>
       <td data-label="Dept">${player.department}</td>
       <td data-label="Lv">${player.level}</td>
       <td data-label="Rapid">${player.rapid}</td>
       <td data-label="Blitz">${player.blitz}</td>
-<td data-label="Achievements">
-  ${
-    player.achievements.length > 0
-      ? highlightMatch(player.achievements.join("<br>"), query)
-      : "<span class='no-achievement'>🚀 No achievements yet</span>"
-  }
-</td>
-
+      <td data-label="Achievements">${achievementsHTML}</td>
     `;
+
     tableBody.appendChild(row);
   });
 }
@@ -107,7 +119,15 @@ function renderLeaderboards(players) {
   const rapidBody = document.querySelector("#rapid-leaderboard tbody");
   rapidBody.innerHTML = "";
   rapidSorted.forEach((player, i) => {
-    const medal = i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : i + 1;
+    const medal =
+      i === 0
+        ? '<i class="fa-solid fa-award" style="color:#facc15"></i>'
+        : i === 1
+        ? '<i class="fa-solid fa-medal" style="color:#a1a1aa"></i>'
+        : i === 2
+        ? '<i class="fa-solid fa-award" style="color:#b45309"></i>'
+        : i + 1;
+
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>${medal}</td>
@@ -122,7 +142,15 @@ function renderLeaderboards(players) {
   const blitzBody = document.querySelector("#blitz-leaderboard tbody");
   blitzBody.innerHTML = "";
   blitzSorted.forEach((player, i) => {
-    const medal = i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : i + 1;
+    const medal =
+      i === 0
+        ? '<i class="fa-solid fa-award" style="color:#facc15"></i>'
+        : i === 1
+        ? '<i class="fa-solid fa-medal" style="color:#a1a1aa"></i>'
+        : i === 2
+        ? '<i class="fa-solid fa-award" style="color:#b45309"></i>'
+        : i + 1;
+
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>${medal}</td>

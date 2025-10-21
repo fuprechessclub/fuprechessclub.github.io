@@ -42,6 +42,8 @@ OneSignalDeferred.push(async function(OneSignal) {
 <link rel="icon" type="image/png" sizes="32x32" href="fupreChess_favicon.png">
 
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -79,7 +81,9 @@ OneSignalDeferred.push(async function(OneSignal) {
 
     </nav>
     <div class="nav-actions">
-      <button id="dark-toggle" class="dark-toggle">🌓</button>
+      <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
       <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
   </header>

@@ -42,6 +42,7 @@ OneSignalDeferred.push(async function(OneSignal) {
 <!-- PNG for modern browsers -->
 <link rel="icon" type="image/png" sizes="32x32" href="fupreChess_favicon.png">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 
@@ -74,7 +75,9 @@ OneSignalDeferred.push(async function(OneSignal) {
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button id="dark-toggle" class="dark-toggle">🌓</button>
+      <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
       <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
   </header>
@@ -84,7 +87,8 @@ OneSignalDeferred.push(async function(OneSignal) {
 
     <!-- General Ratings Table -->
     <section>
-      <h2>📊 Player Ratings</h2>
+<h2><i class="fa-solid fa-chart-line"></i> Player Ratings</h2>
+
 
 
       <!-- Search Bar -->
@@ -122,7 +126,7 @@ OneSignalDeferred.push(async function(OneSignal) {
     
     <!-- Rapid Leaderboard -->
     <section>
-      <h2>⏱️ Rapid Leaderboard</h2>
+      <h2><i class="fa-solid fa-stopwatch" style="color: #0ea5e9;"></i> Rapid Leaderboard</h2>
       <table id="rapid-leaderboard" border="1">
         <thead>
           <tr>
@@ -137,7 +141,7 @@ OneSignalDeferred.push(async function(OneSignal) {
 
     <!-- Blitz Leaderboard -->
     <section>
-      <h2>⚡ Blitz Leaderboard</h2>
+      <h2><i class="fa-solid fa-bolt" style="color: #f97316;"></i> Blitz Leaderboard</h2>
       <table id="blitz-leaderboard" border="1">
         <thead>
           <tr>
@@ -151,15 +155,15 @@ OneSignalDeferred.push(async function(OneSignal) {
     </section>
 
 <section class="achievements-info">
-  <h2>📖 Achievements Glossary</h2>
-  <ul>
-    <li>🏆 <strong>FCC Champion</strong> – Winner of the annual <em>Fupre Chess Club Championship.</em></li>
-    <li>🏅 <strong>FCM Winner</strong> – Winner of the annual <em>Fupre Chess Masters.</em></li>
-    <li>🥇 <strong>FCL Winner</strong> – Winner of the annual <em>Fupre Chess League.</em></li>
-    <li>⏱️ <strong>Grand Rapid Winner</strong> – Champion of the montly <em>Rapid Tournament.</em></li>
-    <li>⚡ <strong>Lightning Blitz Winner</strong> – First place in the weekly <em>Blitz Tournament.</em></li>
-    <li>🌟 <strong>Rising Star</strong> – Award for newcomers and intermediate players showing strong performance.</li>
-  </ul>
+  <h2>Achievements Glossary</h2>
+  <ul class="fcc-honors">
+  <li><i class="fa-solid fa-trophy"></i> <strong>FCC Champion</strong> – Winner of the annual <em>Fupre Chess Club Championship.</em></li>
+  <li><i class="fa-solid fa-medal"></i> <strong>FCM Winner</strong> – Winner of the annual <em>Fupre Chess Masters.</em></li>
+  <li><i class="fa-solid fa-award"></i> <strong>FCL Winner</strong> – Winner of the annual <em>Fupre Chess League.</em></li>
+  <li><i class="fa-solid fa-stopwatch"></i> <strong>Grand Rapid Winner</strong> – Champion of the monthly <em>Rapid Tournament.</em></li>
+  <li><i class="fa-solid fa-bolt"></i> <strong>Lightning Blitz Winner</strong> – First place in the weekly <em>Blitz Tournament.</em></li>
+  <li><i class="fa-solid fa-star"></i> <strong>Rising Star</strong> – Award for newcomers and intermediate players showing strong performance.</li>
+</ul>
   <p class="note">
     These achievements celebrate dedication, skill, and growth — keeping our chess community competitive and inspiring.
   </p>

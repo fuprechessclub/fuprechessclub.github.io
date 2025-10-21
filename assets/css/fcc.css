@@ -185,8 +185,6 @@ body.fcc .navbar{z-index:9999;}
 .fcc-qual-header{display:flex;gap:12px;align-items:center;margin-bottom:10px;}
 .fcc-emoji{
   width:44px;height:44px;display:grid;place-items:center;font-size:24px;border-radius:12px;
-  background:color-mix(in srgb,var(--fcc-accent) 12%,transparent);
-  border:1px solid color-mix(in srgb,var(--fcc-accent) 35%,transparent);
 }
 .fcc-kicker{opacity:.9;margin-top:2px;}
 .fcc-qual-block{margin-top:14px;}

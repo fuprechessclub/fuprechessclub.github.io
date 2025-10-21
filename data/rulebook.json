@@ -2,17 +2,16 @@
   "rules": [
     {
       "category": "Eligibility",
-      "icon": "🎓",
+      "icon": "fa-solid fa-user-graduate",
       "color": "#2196f3",
       "items": [
         "Only registered students of FUPRE can join the club. (Non-fuprites can also join the club by admin approval.)",
         "Players must complete registration before participating in official events."
-      
       ]
     },
     {
       "category": "Tournaments",
-      "icon": "🏆",
+      "icon": "fa-solid fa-trophy",
       "color": "#ff9800",
       "items": [
         "Club tournaments follow FIDE guidelines unless stated otherwise.",
@@ -23,7 +22,7 @@
     },
     {
       "category": "Time Controls",
-      "icon": "⏱️",
+      "icon": "fa-solid fa-stopwatch",
       "color": "#4caf50",
       "items": [
         "Standard games use 15+10 (15 minutes with 10s increment).",
@@ -33,7 +32,7 @@
     },
     {
       "category": "Fair Play",
-      "icon": "⚖️",
+      "icon": "fa-solid fa-scale-balanced",
       "color": "#f44336",
       "items": [
         "Engine assistance is strictly prohibited.",
@@ -42,7 +41,7 @@
     },
     {
       "category": "Scoring",
-      "icon": "📊",
+      "icon": "fa-solid fa-chart-simple",
       "color": "#9c27b0",
       "items": [
         "Win = 1 point",
@@ -53,19 +52,17 @@
     },
     {
       "category": "Ratings",
-      "icon": "📈",
+      "icon": "fa-solid fa-chart-line",
       "color": "#009688",
       "items": [
         "Ratings are updated after every approved match.",
         "New players will receive their official FCC rating after participating in three (3) Fupre Chess rated tournaments. Their initial rating will be determined by calculating the average of their performance across those three tournaments. Each performance rating is based on how well the player scores against the average strength of their opponents in a tournament, using the formula: Performance Rating = Average Opponent Rating + 800 × ((Score / Games Played) − 0.5). After all three tournaments, the average of these performance ratings becomes the player’s starting FCC rating.",
         "Player ratings in the Fupre Chess Club are calculated using the standard Fupre Chess Analytics system, which follows the Elo rating model. After each rated match, a player’s rating increases or decreases based on their performance relative to their opponent’s rating and the expected outcome. The rating change is determined using the formula: New Rating = Current Rating + K × (Actual Score − Expected Score), where Expected Score = 1 ÷ (1 + 10^((Opponent Rating − Current Rating) ÷ 400)) and K is a development coefficient that controls rating volatility. Higher-rated players gain fewer points for beating lower-rated opponents, while lower-rated players gain more points for upsets. Over time, this ensures accurate and fair reflection of each player’s skill level. All player ratings are calculated and updated automatically through the Fupre Chess Analytics web app."
-
-
       ]
     },
     {
       "category": "Behaviour",
-      "icon": "🤝",
+      "icon": "fa-solid fa-handshake",
       "color": "#795548",
       "items": [
         "Respect opponents and arbiters at all times.",
@@ -75,21 +72,21 @@
     },
     {
       "category": "Fupre Chess Championship (FCC)",
-      "icon": "👑",
-      "color": "#e91e63",
+      "icon": "fa-solid fa-crown",
+      "color": "#0d47a1",
       "items": [
         "The FCC is the club’s most prestigious annual event.",
-        "Winner of FCM goes on to challenge the FCC champion.(Rapid Championship)",
-        "Open to all fupre chess players.(Blitz Championship)",
-        "Games are Rapid format (30+30).(Rapid Championship)",
-        "Games are Blitz format (3+2).(Blitz Championship)",
-        "Tie-breaks decided by 2 game Armegedon.",
+        "Winner of FCM goes on to challenge the FCC champion. (Rapid Championship)",
+        "Open to all FUPRE chess players. (Blitz Championship)",
+        "Games are Rapid format (30+30). (Rapid Championship)",
+        "Games are Blitz format (3+2). (Blitz Championship)",
+        "Tie-breaks decided by 2-game Armageddon.",
         "Winner holds the FCC title for one year."
       ]
     },
     {
       "category": "Fupre Chess Masters (FCM)",
-      "icon": "🏅",
+      "icon": "fa-solid fa-medal",
       "color": "#3f51b5",
       "items": [
         "The FCM is an event featuring 8 players selected through 4 qualification paths.",
@@ -100,7 +97,7 @@
     },
     {
       "category": "Fupre Chess League (FCL)",
-      "icon": "🥇",
+      "icon": "fa-solid fa-award",
       "color": "#ff5722",
       "items": [
         "The FCL is a season-long competition.",

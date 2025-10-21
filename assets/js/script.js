@@ -50,13 +50,29 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!inside) toggleMenu(false);
   });
   window.addEventListener("resize", () => { if (window.innerWidth > 768) toggleMenu(false); });
+// Theme: load saved (fallback to system preference)
+const saved = localStorage.getItem("theme");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  // theme
-  if (localStorage.getItem("theme") === "dark") document.body.classList.add("dark");
-  darkToggle?.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
-  });
+if (saved === "dark" || (!saved && prefersDark)) {
+  document.body.classList.add("dark");
+  darkToggle?.setAttribute("aria-pressed", "true");
+} else {
+  darkToggle?.setAttribute("aria-pressed", "false");
+}
+
+// Click: toggle theme + spin animation + persist
+darkToggle?.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  const isDark = document.body.classList.contains("dark");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+  darkToggle.setAttribute("aria-pressed", isDark ? "true" : "false");
+
+  // add a quick spin on each toggle
+  darkToggle.classList.add("spin");
+  setTimeout(() => darkToggle.classList.remove("spin"), 600);
+});
 });
 
 
@@ -444,6 +460,48 @@ function fireMiniConfetti(container) {
   // optional: close the panel after opening the portfolio
   aboutBtn?.addEventListener('click', () => setTimeout(() => setOpen(false), 50));
 })();
+
+
+
+
+// === Scroll-triggered icon reveal (mobile-friendly) ===
+document.addEventListener("DOMContentLoaded", () => {
+  const icons = document.querySelectorAll(
+    ".fcc-honors i, h2 i, h4 i, .fcc-emoji i"
+  );
+
+  if (!icons.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // add class directly to the icon element
+          entry.target.classList.add("icon-visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.25 } // slightly more forgiving
+  );
+
+  icons.forEach((icon) => observer.observe(icon));
+});
+
+
+// Give fcc-honors rows a quick focus so :focus-within styles apply on tap
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".fcc-honors li").forEach(li => {
+    li.setAttribute("tabindex", "0"); // makes focus-within work consistently
+    li.addEventListener("touchstart", () => {
+      li.focus();
+      setTimeout(() => li.blur(), 300); // brief focus flash
+    }, { passive: true });
+  });
+});
+
+
+window.addEventListener("load", () => document.body.classList.add("loaded"));
 
 
 

@@ -130,7 +130,38 @@ body.dark .logo-glow { text-shadow: 0 0 1px var(--glow), 0 0 1px var(--glow), 0 
   color: var(--accent); cursor: pointer; transition: transform 0.3s ease;
 }
 .hamburger:hover, .hamburger:focus, .hamburger:active { color: var(--glow); }
-.dark-toggle { font-size: 1.2rem; background: none; border: none; cursor: pointer; color: white; }
+
+
+/* === Dark Mode Toggle (Animated Icon) === */
+.dark-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.dark-toggle:hover {
+  transform: rotate(180deg);
+}
+
+/* Smooth spin animation */
+.dark-toggle.spin i {
+  animation: spinToggle 0.6s ease;
+}
+
+@keyframes spinToggle {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+
+
 
 /* =================
    MOBILE STYLE
@@ -2180,13 +2211,6 @@ body.dark .tournaments-info .note { color: #aaa; }
 }
 
 
-
-
-
-
-
-
-
 /* CONTACT PAGE */
 .contact-page {
   max-width: 1000px;
@@ -3552,3 +3576,220 @@ body.dark .tournaments-info .note { color: #aaa; }
   transform: scale(1.05);
 }
 
+
+/* =========================================
+   FUPRE Chess Club — Icon Styling & Animations
+   ========================================= */
+
+/* ---------- General Font Awesome Icons ---------- */
+i.fa-solid, i.fa-brands {
+  color: var(--accent);
+  margin-right: 6px;
+  transition: color 0.3s ease;
+}
+
+/* Glow on hover for regular UI icons */
+i.fa-solid:hover, i.fa-brands:hover {
+  color: var(--glow);
+  cursor: pointer;
+}
+
+/* Exclude social/contact icons from fancy animations */
+.footer-contact i,
+.fcc-contact i,
+.fcc-social i,
+.fa-phone,
+.fa-envelope,
+.fa-location-dot,
+.fa-x-twitter,
+.fa-whatsapp,
+.fa-youtube,
+.fa-tiktok {
+  animation: none !important;
+  transform: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transition: color 0.3s ease;
+}
+
+/* ---------- Player Icons (Leaderboard / Matches) ---------- */
+.fa-crown {
+  color: #facc15; /* gold */
+}
+.fa-handshake {
+  color: #6b7280; /* neutral grey */
+  opacity: 0.9;
+}
+.player i {
+  margin-left: 4px;
+  transition: transform 0.25s ease;
+}
+.player:hover i {
+  transform: scale(1.15);
+}
+
+/* ---------- Honors Section Icons ---------- */
+.fcc-honors {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+.fcc-honors li {
+  margin: 0.5em 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6em;
+  line-height: 1.5;
+  outline: none;
+}
+
+/* Color-coding for each honor type */
+.fcc-honors li:nth-child(1) i { color: #facc15; filter: drop-shadow(0 0 4px rgba(250,204,21,0.5)); } /* Trophy */
+.fcc-honors li:nth-child(2) i { color: #a1a1aa; filter: drop-shadow(0 0 3px rgba(161,161,170,0.4)); } /* Medal */
+.fcc-honors li:nth-child(3) i { color: #b45309; filter: drop-shadow(0 0 3px rgba(180,83,9,0.4)); } /* Award */
+.fcc-honors li:nth-child(4) i { color: #0ea5e9; filter: drop-shadow(0 0 3px rgba(14,165,233,0.4)); } /* Stopwatch */
+.fcc-honors li:nth-child(5) i { color: #f97316; filter: drop-shadow(0 0 4px rgba(249,115,22,0.5)); } /* Bolt */
+.fcc-honors li:nth-child(6) i { color: #22c55e; filter: drop-shadow(0 0 4px rgba(34,197,94,0.4)); } /* Star */
+
+/* ---------- Section Headings & Divider ---------- */
+h2 i,
+h4 i {
+  margin-right: 0.4em;
+  color: var(--accent);
+}
+.fcc-emoji i {
+  font-size: 1.8rem;
+  color: var(--accent);
+  opacity: 0.9;
+  filter: drop-shadow(0 0 3px var(--glow));
+}
+
+/* =========================================
+   Scroll + Hover + Mobile Animations
+   ========================================= */
+
+/* Base state: hidden until scrolled into view */
+.fcc-honors i,
+h2 i,
+h4 i,
+.fcc-emoji i {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 0.6s ease, opacity 0.6s ease, filter 0.6s ease, color 0.6s ease;
+  will-change: transform, opacity, filter, color;
+}
+
+/* When visible (scroll trigger adds .icon-visible) */
+.fcc-honors i.icon-visible,
+h2 i.icon-visible,
+h4 i.icon-visible,
+.fcc-emoji i.icon-visible {
+  opacity: 1;
+  transform: scale(1);
+  animation:
+    floatPulse 2.8s ease-in-out infinite alternate,
+    softGlow   3.2s ease-in-out infinite alternate;
+}
+
+/* Float and Glow keyframes */
+@keyframes floatPulse {
+  0%   { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-3px) scale(1.07); }
+}
+@keyframes softGlow {
+  0%   { filter: drop-shadow(0 0 2px currentColor); }
+  100% { filter: drop-shadow(0 0 8px currentColor); }
+}
+
+/* Add randomness to floating motion */
+.fcc-honors i.icon-visible:nth-child(odd),
+h2 i.icon-visible:nth-child(odd),
+h4 i.icon-visible:nth-child(odd),
+.fcc-emoji i.icon-visible:nth-child(odd) {
+  animation-delay: 0.8s, 0.4s; /* float, glow */
+}
+.fcc-honors i.icon-visible:nth-child(3n),
+h2 i.icon-visible:nth-child(3n),
+h4 i.icon-visible:nth-child(3n),
+.fcc-emoji i.icon-visible:nth-child(3n) {
+  animation-delay: 1.2s, 0.6s;
+}
+
+/* Hover (desktop): pause floating and glow, lift higher */
+.fcc-honors i.icon-visible:hover,
+h2 i.icon-visible:hover,
+h4 i.icon-visible:hover,
+.fcc-emoji i.icon-visible:hover {
+  animation-play-state: paused;
+  transform: translateY(-3px) scale(1.15);
+  filter: drop-shadow(0 0 10px currentColor);
+  opacity: 1;
+}
+
+/* Mobile "active/focus" mimic hover */
+.fcc-honors li:active i,
+.fcc-honors li:focus-within i,
+h2:active i, h2:focus-within i,
+h4:active i, h4:focus-within i,
+.fcc-emoji:active i, .fcc-emoji:focus-within i {
+  animation-play-state: paused;
+  transform: translateY(-3px) scale(1.15);
+  filter: drop-shadow(0 0 10px currentColor);
+  opacity: 1;
+}
+
+/* Subtle focus outline hint for accessibility */
+.fcc-honors li:focus-within {
+  filter: drop-shadow(0 0 2px var(--accent));
+}
+
+/* Ensure transitions are smooth */
+.fcc-honors i,
+h2 i,
+h4 i,
+.fcc-emoji i {
+  transition: transform .4s ease, opacity .4s ease, filter .4s ease, color .4s ease;
+  will-change: transform, filter, color, opacity;
+}
+
+/* Show icons immediately once fully loaded (avoid flash at top) */
+body.loaded .fcc-honors i,
+body.loaded h2 i,
+body.loaded h4 i,
+body.loaded .fcc-emoji i {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* Rulebook polished UI */
+.rule-header .toggle {
+  font-weight: 700;
+  font-size: 1.3rem;
+  user-select: none;
+  transition: transform 0.25s ease;
+}
+.rule-card.active .rule-header .toggle {
+  transform: rotate(180deg);
+}
+
+.rule-items {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.rule-card.active .rule-items {
+  max-height: 800px; /* enough for tall sections */
+}
+
+.rule-items ol {
+  margin: 0.8rem 0 0 1.2rem;
+  padding: 0;
+}
+.rule-items li {
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+.rule-card:nth-child(8) .rule-header i {
+  filter: drop-shadow(0 0 8px rgba(13,71,161,0.8));
+}

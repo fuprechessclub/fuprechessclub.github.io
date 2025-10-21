@@ -15,9 +15,7 @@
     "level": 200,
     "rapid": 1154,
     "blitz": 1106,
-    "achievements": [
-      "⭐ Rising Star"
-    ]
+    "achievements": []
   },
   {
     "name": "Alex",
@@ -43,6 +41,17 @@
   },
 
 
+  
+  {
+    "name": "Caleb",
+    "department": "Chemical Eng",
+    "level": 200,
+    "rapid": 710,
+    "blitz": 710,
+    "achievements": [ 
+      "🥇 1x FCL Winner"
+    ]
+  },
     {
     "name": "Fortune",
     "department": "Comp Sci",
@@ -233,16 +242,6 @@
     "achievements": []
   },
   
-  {
-    "name": "Caleb",
-    "department": "Chemical Eng",
-    "level": 200,
-    "rapid": 710,
-    "blitz": 710,
-    "achievements": [ 
-      "🥇 1x FCL Winner"
-    ]
-  },
   
   {
     "name": "Godbless",

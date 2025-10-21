@@ -40,6 +40,7 @@ OneSignalDeferred.push(async function(OneSignal) {
 <!-- PNG for modern browsers -->
 <link rel="icon" type="image/png" sizes="32x32" href="fupreChess_favicon.png">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 
@@ -72,7 +73,9 @@ OneSignalDeferred.push(async function(OneSignal) {
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button id="dark-toggle" class="dark-toggle">🌓</button>
+      <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
       <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
   </header>
@@ -123,12 +126,12 @@ OneSignalDeferred.push(async function(OneSignal) {
     <span id="playerBadge" class="player-badge"></span>
   </div>
 
-  <div class="filter-group" data-icon="📅">
+  <div class="filter-group" data-icon="🗓️">
     <input type="date" id="startDate" placeholder="Start Date">
     <small class="hint-text">Start Date</small>
   </div>
 
-  <div class="filter-group" data-icon="📅">
+  <div class="filter-group" data-icon="🗓️">
     <input type="date" id="endDate" placeholder="End Date">
     <small class="hint-text">End Date</small>
   </div>
@@ -171,7 +174,7 @@ OneSignalDeferred.push(async function(OneSignal) {
 </div>
 
 <section class="leaderboard-section">
-  <h2>🏆 Top Performers</h2>
+  <h2><i class="fa-solid fa-trophy"></i> Top Performers</h2>
   <p>Players with the Highest Win Record Across Rated Matches & Tournaments.</p>
   <ul id="leaderboardList" class="leaderboard-list"></ul>
 </section>
@@ -183,7 +186,7 @@ OneSignalDeferred.push(async function(OneSignal) {
      Club Game GIF Gallery
 ========================= -->
 <section class="chess-gif-gallery">
-  <h2 class="gallery-title">♟ Club Game Highlights</h2>
+  <h2 class="gallery-title"><i class="fa-solid fa-chess-knight"></i> Club Game Highlights</h2>
   <p class="gallery-subtitle">Explore animated replays from our rated games — tap any board to view full screen.</p>
 
   <!-- Filter Buttons -->

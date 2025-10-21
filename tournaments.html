@@ -43,6 +43,7 @@ OneSignalDeferred.push(async function(OneSignal) {
 <!-- PNG for modern browsers -->
 <link rel="icon" type="image/png" sizes="32x32" href="fupreChess_favicon.png">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 
@@ -74,14 +75,17 @@ OneSignalDeferred.push(async function(OneSignal) {
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button id="dark-toggle" class="dark-toggle">🌓</button>
+      <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
       <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
   </header>
 
   <!-- ⏳ Countdown Timer -->
   <section class="countdown-section">
-    <h2>⏳ Countdown to Next Tournament</h2>
+    <h2><i class="fa-solid fa-hourglass-half"></i>
+ Countdown to Next Tournament</h2>
     <h3 id="event-title"></h3>
     <div class="countdown-container">
       <div class="flip-box"><span id="days">00</span><label>Days</label></div>
@@ -115,7 +119,7 @@ OneSignalDeferred.push(async function(OneSignal) {
 <main class="main-content">
   <!-- 📅 Upcoming Events -->
   <section class="events-section">
-    <h1>🏆 Upcoming Tournaments</h1>
+    <h1><i class="fa-solid fa-trophy"></i> Upcoming Tournaments</h1>
     <p class="intro">
       Stay up to date with our chess tournaments, meetings, and special events.
     </p>
@@ -124,33 +128,58 @@ OneSignalDeferred.push(async function(OneSignal) {
       <article class="event-box">
         <time datetime="2026-01-16">Jan 16, 2026</time>
         <h3>Semester Kickoff Blitz Tournament</h3>
-        <p>🕒 3:00 PM | Fast-paced games to start the semester with energy.</p>
+        <p><i class="fa-solid fa-clock"></i> 3:00 PM | Fast-paced games to start the semester with energy.</p>
       </article>
 
       <article class="event-box">
         <time datetime="2026-01-17">Jan 17, 2026</time>
         <h3>Rapid Rating Games - Round 1</h3>
-        <p>🕐 12:00 PM | A new season of rapid tournaments begins.</p>
+        <p><i class="fa-solid fa-clock"></i> 12:00 PM | A new season of rapid tournaments begins.</p>
       </article>
 
       <article class="event-box">
         <time datetime="2026-01-22">Jan 22, 2026</time>
         <h3>Team Chess Meetup</h3>
-        <p>♟️ Fun team-based challenges and casual games.</p>
+        <p><i class="fa-solid fa-chess-queen"></i> Fun team-based challenges and casual games.</p>
       </article>
     </div>
   </section>
 
-  <!-- 📖 Tournament Overview -->
+  <!--  Tournament Overview -->
   <section class="tournaments-info">
-    <h2>📖 Tournament Overview</h2>
-    <ul>
-      <li>🏆 <strong>FCC Championship</strong> – The annual <em>Fupre Chess Club Championship</em>, our most prestigious event.</li>
-      <li>🏅 <strong>FCM</strong> – The annual <em>Fupre Chess Masters</em>, showcasing top-level talent.</li>
-      <li>🥇 <strong>FCL</strong> – The annual <em>Fupre Chess League</em>, a season-long competition for consistency and teamwork.</li>
-      <li>⏱️ <strong>Grand Rapid</strong> – A monthly <em>Rapid Tournament</em> that tests speed and precision under time pressure.</li>
-      <li>⚡ <strong>Lightning Blitz</strong> – A weekly <em>Blitz Tournament</em>, for fast-paced, high-energy games.</li>
-    </ul>
+    <h2>Tournament Overview</h2>
+   <ul>
+  <li>
+    <i class="fa-solid fa-trophy" style="color:#facc15"></i>
+    <strong>FCC Championship</strong> – The annual
+    <em>Fupre Chess Club Championship</em>, our most prestigious event.
+  </li>
+
+  <li>
+    <i class="fa-solid fa-medal" style="color:#a1a1aa"></i>
+    <strong>FCM</strong> – The annual
+    <em>Fupre Chess Masters</em>, showcasing top-level talent.
+  </li>
+
+  <li>
+    <i class="fa-solid fa-award" style="color:#b45309"></i>
+    <strong>FCL</strong> – The annual
+    <em>Fupre Chess League</em>, a season-long competition for consistency and teamwork.
+  </li>
+
+  <li>
+    <i class="fa-solid fa-stopwatch" style="color:#0ea5e9"></i>
+    <strong>Grand Rapid</strong> – A monthly
+    <em>Rapid Tournament</em> that tests speed and precision under time pressure.
+  </li>
+
+  <li>
+    <i class="fa-solid fa-bolt" style="color:#f97316"></i>
+    <strong>Lightning Blitz</strong> – A weekly
+    <em>Blitz Tournament</em>, for fast-paced, high-energy games.
+  </li>
+</ul>
+
     <p class="note">
       These tournaments celebrate dedication, skill, and growth — keeping the Fupre Chess Club community engaged, competitive, and inspiring.
     </p>
@@ -158,7 +187,8 @@ OneSignalDeferred.push(async function(OneSignal) {
 
 
 <section class="calendar-2026">
-  <h2>📅 FUPRE Chess Club Tournament Calendar – 2026</h2>
+<h2><i class="fa-solid fa-calendar-days"></i> FUPRE Chess Club Tournament Calendar – 2026</h2>
+
   <p class="intro">
     A structured year of chess — from weekly blitz to annual championships.
   </p>
@@ -189,10 +219,13 @@ OneSignalDeferred.push(async function(OneSignal) {
 
 <!-- 🗓️ Tournament Calendar Notes -->
 <section class="calendar-notes">
-  <h2>🗓️ FUPRE Chess Club Tournament Calendar – 2026</h2>
+<h2><i class="fa-solid fa-calendar-days"></i> FUPRE Chess Club Tournament Calendar – 2026</h2>
 
+
+  
+<!-- 📍 General Notes -->
   <div class="calendar-box">
-    <h3>📍 General Notes</h3>
+    <h3>General Notes</h3>
     <ul>
       <li><strong>FCC (Championship)</strong> → Held end of 1st semester.</li>
       <li><strong>FCM (Masters)</strong> → Held before FCC to determine the challenger.</li>
@@ -208,7 +241,7 @@ OneSignalDeferred.push(async function(OneSignal) {
     <p><strong>Weekly Lightning Blitz:</strong> Every Friday evening.<br>
        <strong>Monthly Grand Rapid:</strong> Last Saturday of each month.</p>
 
-    <h4>🏆 Major Events</h4>
+    <h4><i class="fa-solid fa-trophy"></i> Major Events</h4>
     <ul>
       <li><strong>February 2026 – FUPRE Chess Masters (FCM):</strong> 8 players, Candidates-style event (Double RR or Swiss), ~1 week. Purpose: Determines Challenger for FCC (Rapid).</li>
       <li><strong>April 2026 – FUPRE Chess Championship (FCC):</strong> 
@@ -226,7 +259,7 @@ OneSignalDeferred.push(async function(OneSignal) {
     <p><strong>Weekly Lightning Blitz:</strong> Every Friday evening.<br>
        <strong>Monthly Grand Rapid:</strong> Last Saturday of each month.</p>
 
-    <h4>🏆 Major Event</h4>
+    <h4><i class="fa-solid fa-trophy"></i> Major Event</h4>
     <ul>
       <li><strong>May – July 2026 – FUPRE Chess League (FCL):</strong> Round-robin league across semester. Points accumulate, winner crowned at semester’s end.</li>
     </ul>
@@ -246,20 +279,21 @@ OneSignalDeferred.push(async function(OneSignal) {
 
 <!-- 📑 FCC 2026 Proposal -->
 <section class="fcc-proposal">
-  <h2>📑 FUPRE Chess Championship – 2026 (Inaugural Edition)</h2>
+  <h2><i class="fa-solid fa-clipboard-list"></i>
+ FUPRE Chess Championship – 2026 (Inaugural Edition)</h2>
   <p>
     The first official edition of the <strong>FUPRE Chess Championship (FCC)</strong> — a landmark event to crown our 
     Rapid and Blitz champions.
   </p>
 
   <div class="proposal-box">
-    <h2>🥇 Rapid Chess Championship</h2>
+    <h2><i class="fa-solid fa-stopwatch" style="color: #0ea5e9;"></i> Rapid Chess Championship</h2>
     <ul>
       <li><strong>Eligibility:</strong> Top 2 finishers of FCM 2026</li>
       <li><strong>Format:</strong> 10 Rapid games (30+30) across 10 days</li>
       <li><strong>Tiebreaks:</strong> 2-game Armageddon (10 mins vs 7 mins w/draw odds)</li>
     </ul>
-    <h2>⚡ Blitz Chess Championship</h2>
+    <h2><i class="fa-solid fa-bolt" style="color: #f97316;"></i> Blitz Chess Championship</h2>
     <ul>
       <li><strong>Eligibility:</strong> Open to all FUPRE players</li>
       <li><strong>Format:</strong> Swiss or Double RR, 3+2 time control</li>

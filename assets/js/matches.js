@@ -121,79 +121,98 @@
   }
 
   // ---------- render ----------
-  function render() {
-    updatePlayerBadge();
+function render() {
+  updatePlayerBadge();
 
-    const wrapper = $(".matches-wrapper");
-    if (!wrapper) return;
+  const wrapper = $(".matches-wrapper");
+  if (!wrapper) return;
 
-    wrapper.innerHTML = "";
+  wrapper.innerHTML = "";
 
-    const grid = document.createElement("div");
-    grid.className = "matches-grid";
-    wrapper.appendChild(grid);
+  const grid = document.createElement("div");
+  grid.className = "matches-grid";
+  wrapper.appendChild(grid);
 
-    const data = filteredSorted();
+  const data = filteredSorted();
 
-    data.forEach((m,i) => {
-      const w = getWinner(m);
-      const winA = w === m.playerA, winB = w === m.playerB, draw = (w === "Draw");
-      const aTone = winA ? "win" : draw ? "draw" : "loss";
-      const bTone = winB ? "win" : draw ? "draw" : "loss";
-      const icon = draw ? "🤝" : "👑";
+  data.forEach((m, i) => {
+    const w = getWinner(m);
+    const winA = w === m.playerA;
+    const winB = w === m.playerB;
+    const draw = w === "Draw";
 
-      const card = document.createElement("article");
-      card.className = "match-card hidden";
-      card.dataset.index = String(i);
-      card.innerHTML = `
-        <div class="mc-row">
-          <span class="player ${aTone}">${m.playerA}${winA ? " "+icon : ""}</span>
-          <span class="vs">vs</span>
-          <span class="player ${bTone}">${m.playerB}${winB ? " "+icon : ""}</span>
-        </div>
-        <div class="mc-row">
-          <span class="result"><strong>${m.result}</strong></span>
-          <span class="date">${m.date}</span>
-        </div>
-        <div class="mc-meta"><em>${m.event || "Friendly"} • ${m.timeControl || "—"}</em></div>
-      `;
-      grid.appendChild(card);
-    });
+    const aTone = winA ? "win" : draw ? "draw" : "loss";
+    const bTone = winB ? "win" : draw ? "draw" : "loss";
 
-    applyCollapsible();
-    attachOpenModalHandlers();
-    buildLeaderboard();
-  }
+    // ✅ Use FA icons instead of emojis
+    const iconWin = '<i class="fa-solid fa-crown" style="color:#facc15;"></i>';
+    const iconDraw = '<i class="fa-solid fa-handshake" style="color:#6b7280;"></i>';
 
-  /* =====================
-     Leaderboard Handling
-  ===================== */
-  function buildLeaderboard(){
-    const winCount = {};
-    state.matches.forEach(m => {
-      const winner = getWinner(m);
-      if (winner !== "Draw") {
-        winCount[winner] = (winCount[winner] || 0) + 1;
-      }
-    });
+    const card = document.createElement("article");
+    card.className = "match-card hidden";
+    card.dataset.index = String(i);
 
-    const sorted = Object.entries(winCount)
-      .sort((a,b) => b[1] - a[1])
-      .slice(0,5);
+    card.innerHTML = `
+      <div class="mc-row">
+        <span class="player ${aTone}">
+          ${m.playerA}${winA ? " " + iconWin : draw ? " " + iconDraw : ""}
+        </span>
+        <span class="vs">vs</span>
+        <span class="player ${bTone}">
+          ${m.playerB}${winB ? " " + iconWin : draw ? " " + iconDraw : ""}
+        </span>
+      </div>
+      <div class="mc-row">
+        <span class="result"><strong>${m.result}</strong></span>
+        <span class="date">${m.date}</span>
+      </div>
+      <div class="mc-meta"><em>${m.event || "Friendly"} • ${m.timeControl || "—"}</em></div>
+    `;
 
-    const list = document.getElementById("leaderboardList");
-    if (!list) return;
-    list.innerHTML = "";
+    grid.appendChild(card);
+  });
 
-    sorted.forEach(([player, wins], idx) => {
-      const li = document.createElement("li");
-      li.innerHTML = `
-        <span class="player-name">${idx===0 ? "👑 " : ""}${player}</span>
-        <span class="wins">${wins} Wins</span>
-      `;
-      list.appendChild(li);
-    });
-  }
+  applyCollapsible();
+  attachOpenModalHandlers();
+  buildLeaderboard();
+}
+
+
+/* =====================
+   Leaderboard Handling
+===================== */
+function buildLeaderboard() {
+  const winCount = {};
+  state.matches.forEach(m => {
+    const winner = getWinner(m);
+    if (winner !== "Draw") {
+      winCount[winner] = (winCount[winner] || 0) + 1;
+    }
+  });
+
+  const sorted = Object.entries(winCount)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 5);
+
+  const list = document.getElementById("leaderboardList");
+  if (!list) return;
+  list.innerHTML = "";
+const icons = [
+  '<i class="fa-solid fa-crown" style="color:#facc15"></i> ', // 1st
+  '<i class="fa-solid fa-medal" style="color:#a1a1aa"></i> ', // 2nd
+  '<i class="fa-solid fa-award" style="color:#b45309"></i> '  // 3rd
+];
+
+sorted.forEach(([player, wins], idx) => {
+  const li = document.createElement("li");
+  const icon = icons[idx] || ""; // only add for top 3
+  li.innerHTML = `
+    <span class="player-name">${icon}${player}</span>
+    <span class="wins">${wins} Wins</span>
+  `;
+  list.appendChild(li);
+});
+}
 
 
   // ---------- collapsible with glowing arrow ----------
@@ -580,7 +599,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       const maxVisible = window.innerWidth <= 480 ? 3 : 4;
 
-      // ✅ Create the arrow if not already there
+      //  Create the arrow if not already there
       if (!gifToggle) {
         gifToggle = document.createElement("button");
         gifToggle.className = "show-toggle";
@@ -605,7 +624,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
       }
 
-      // ✅ Show toggle if more cards than visible
+      //  Show toggle if more cards than visible
       gifToggle.style.display = cards.length > maxVisible ? "flex" : "none";
 
       // Initial setup

@@ -40,6 +40,8 @@ OneSignalDeferred.push(async function(OneSignal) {
   <!-- PNG for modern browsers -->
   <link rel="icon" type="image/png" sizes="32x32" href="fupreChess_favicon.png">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -79,7 +81,9 @@ OneSignalDeferred.push(async function(OneSignal) {
     </nav>
 
     <div class="nav-actions">
-      <button id="dark-toggle" class="dark-toggle">🌓</button>
+      <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
       <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
   </header>
@@ -275,7 +279,10 @@ OneSignalDeferred.push(async function(OneSignal) {
     <section class="fcc-qual-writeup" aria-labelledby="fcc-qual-system-title">
       <div class="fcc-panel">
         <header class="fcc-qual-header">
-          <div class="fcc-emoji" aria-hidden="true">🎟️</div>
+<div class="fcc-emoji" aria-hidden="true">
+  <i class="fa-solid fa-ticket"></i>
+</div>
+
           <div>
             <h2 id="fcc-qual-system-title" class="fcc-section-title">Qualification System for FUPRE Chess Masters (FCM)</h2>
             <p class="fcc-kicker">The FUPRE Chess Masters will feature <strong>8 players</strong>, selected through <strong>4 qualification paths</strong>.</p>
@@ -334,7 +341,7 @@ OneSignalDeferred.push(async function(OneSignal) {
 
         <!-- Overlap Clarification -->
         <aside class="fcc-callout" role="note" aria-label="Overlap Clarification">
-          <h4 class="fcc-callout-title">🔄 Overlap Clarification</h4>
+          <h4 class="fcc-callout-title"><i class="fa-solid fa-arrows-rotate"></i> Overlap Clarification</h4>
           <p>A player cannot qualify via multiple paths.</p>
           <p>If a player already holds a qualification spot (e.g., via Rating Spot) and places in the Tour, Grand Swiss, or ClarkeTJ Classic, the spot passes to the next eligible player in that event/standings. This ensures <strong>8 unique participants</strong> for FCM.</p>
         </aside>
