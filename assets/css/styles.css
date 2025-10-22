@@ -3643,13 +3643,43 @@ i.fa-solid:hover, i.fa-brands:hover {
   outline: none;
 }
 
-/* Color-coding for each honor type */
-.fcc-honors li:nth-child(1) i { color: #facc15; filter: drop-shadow(0 0 4px rgba(250,204,21,0.5)); } /* Trophy */
-.fcc-honors li:nth-child(2) i { color: #a1a1aa; filter: drop-shadow(0 0 3px rgba(161,161,170,0.4)); } /* Medal */
-.fcc-honors li:nth-child(3) i { color: #b45309; filter: drop-shadow(0 0 3px rgba(180,83,9,0.4)); } /* Award */
-.fcc-honors li:nth-child(4) i { color: #0ea5e9; filter: drop-shadow(0 0 3px rgba(14,165,233,0.4)); } /* Stopwatch */
-.fcc-honors li:nth-child(5) i { color: #f97316; filter: drop-shadow(0 0 4px rgba(249,115,22,0.5)); } /* Bolt */
-.fcc-honors li:nth-child(6) i { color: #22c55e; filter: drop-shadow(0 0 4px rgba(34,197,94,0.4)); } /* Star */
+/* === Color-coding for each honor type (harmonized & glowing) === */
+.fcc-honors li:nth-child(1) i {
+  color: #fef08a; /* Bright sun-gold */
+  filter: drop-shadow(0 0 6px rgba(254, 240, 138, 0.8)) 
+          drop-shadow(0 0 12px rgba(253, 224, 71, 0.6)); /* Radiant glow */
+} /* 🏆 Trophy (brightest, spotlight) */
+
+.fcc-honors li:nth-child(2) i {
+  color: #facc15; /* True gold */
+  filter: drop-shadow(0 0 5px rgba(250, 204, 21, 0.6)) 
+          drop-shadow(0 0 10px rgba(234, 179, 8, 0.4)); /* Warm halo */
+} /* 🏅 Medal */
+
+.fcc-honors li:nth-child(3) i {
+  color: #f59e0b; /* Amber-gold (deeper tone) */
+  filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.5)) 
+          drop-shadow(0 0 8px rgba(217, 119, 6, 0.35)); /* Subtle depth */
+} /* 🥇 Award */
+
+.fcc-honors li:nth-child(4) i {
+  color: #0ea5e9; /* Cyan-blue stopwatch */
+  filter: drop-shadow(0 0 5px rgba(14, 165, 233, 0.7)) 
+          drop-shadow(0 0 10px rgba(125, 211, 252, 0.5));
+} /* ⏱️ Stopwatch */
+
+.fcc-honors li:nth-child(5) i {
+  color: #f97316; /* Vibrant orange bolt */
+  filter: drop-shadow(0 0 5px rgba(249, 115, 22, 0.6)) 
+          drop-shadow(0 0 10px rgba(251, 146, 60, 0.4));
+} /* ⚡ Bolt */
+
+.fcc-honors li:nth-child(6) i {
+  color: #22c55e; /* Emerald green star */
+  filter: drop-shadow(0 0 5px rgba(34, 197, 94, 0.6)) 
+          drop-shadow(0 0 10px rgba(74, 222, 128, 0.4));
+} /* ⭐ Star */
+
 
 /* ---------- Section Headings & Divider ---------- */
 h2 i,
@@ -3793,3 +3823,35 @@ body.loaded .fcc-emoji i {
 .rule-card:nth-child(8) .rule-header i {
   filter: drop-shadow(0 0 8px rgba(13,71,161,0.8));
 }
+
+
+
+
+/* ===== Game Embeds ===== */
+.game-panels{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: var(--space-4, 1rem);
+}
+@media (max-width: 900px){
+  .game-panels{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 640px){
+  .game-panels{ grid-template-columns: 1fr; }
+}
+.game-card .game-embed{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1; /* square view; adjust to 16/9 if preferred */
+  border-radius: var(--radius-2xl, 16px);
+  overflow: hidden;
+  background: var(--surface-2, #111);
+  border: 1px solid var(--border, rgba(255,255,255,.08));
+}
+.game-card .game-embed iframe{
+  position:absolute; inset:0; width:100%; height:100%; border:0;
+}
+.game-card .game-actions { margin-top: .75rem; display:flex; justify-content:flex-end; }
+.game-card h3 { margin-bottom:.5rem; }
+
+

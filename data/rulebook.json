@@ -27,7 +27,8 @@
       "items": [
         "Standard games use 15+10 (15 minutes with 10s increment).",
         "Blitz events use 3+2.",
-        "Time controls vary across tournaments."
+        "Time controls vary across tournaments.",
+        "When promoting a pawn, you must first place the new piece on the promotion square before pressing your clock.\n\nPressing the clock without placing the new piece counts as an illegal move. On the first offense, your opponent is awarded two extra minutes. A second illegal move in the same game results in an automatic loss."
       ]
     },
     {
@@ -87,7 +88,7 @@
     {
       "category": "Fupre Chess Masters (FCM)",
       "icon": "fa-solid fa-medal",
-      "color": "#3f51b5",
+      "color": "#0ea5e9",
       "items": [
         "The FCM is an event featuring 8 players selected through 4 qualification paths.",
         "Double Round-robin format will be used.",
