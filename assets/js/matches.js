@@ -200,7 +200,7 @@ function buildLeaderboard() {
 const icons = [
   '<i class="fa-solid fa-crown" style="color:#facc15"></i> ', // 1st
   '<i class="fa-solid fa-medal" style="color:#a1a1aa"></i> ', // 2nd
-  '<i class="fa-solid fa-award" style="color:#b45309"></i> '  // 3rd
+  '<i class="fa-solid fa-medal" style="color:#b45309"></i> '  // 3rd
 ];
 
 sorted.forEach(([player, wins], idx) => {

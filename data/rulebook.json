@@ -87,7 +87,7 @@
     },
     {
       "category": "Fupre Chess Masters (FCM)",
-      "icon": "fa-solid fa-medal",
+      "icon": "fa-solid fa-award",
       "color": "#0ea5e9",
       "items": [
         "The FCM is an event featuring 8 players selected through 4 qualification paths.",
@@ -98,7 +98,7 @@
     },
     {
       "category": "Fupre Chess League (FCL)",
-      "icon": "fa-solid fa-award",
+      "icon": "fa-solid fa-medal",
       "color": "#ff5722",
       "items": [
         "The FCL is a season-long competition.",
