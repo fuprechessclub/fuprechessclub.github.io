@@ -420,5 +420,26 @@
         .catch((e) => console.error("❌ SW registration failed", e));
     }
   </script>
+
+  <script>
+  // Check if Font Awesome loaded successfully
+  window.addEventListener("load", () => {
+    const testIcon = document.createElement("i");
+    testIcon.className = "fa-solid fa-check";
+    document.body.appendChild(testIcon);
+
+    // If no Font Awesome styles applied (icon shows as text or empty box), load local copy
+    const isFAWorking = window.getComputedStyle(testIcon).fontFamily.includes("Font Awesome");
+    if (!isFAWorking) {
+      const localFA = document.createElement("link");
+      localFA.rel = "stylesheet";
+      localFA.href = "/assets/css/all.min.css"; // local fallback path
+      document.head.appendChild(localFA);
+      console.warn("⚠️ Font Awesome CDN failed — local fallback loaded.");
+    }
+    testIcon.remove();
+  });
+</script>
+
 </body>
 </html>
