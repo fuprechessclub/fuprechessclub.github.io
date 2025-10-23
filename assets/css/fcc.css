@@ -233,9 +233,9 @@ body.fcc .navbar{z-index:9999;}
 .fcc-wrapper img:not(.fcc-player-photo):not(.fcc-player-ava):not(.fcc-banner-photo){max-width:100%;height:auto;}
 
 /* ---------- Responsiveness ---------- */
-@media (max-width:1024px){
+@media (max-width:768px){
   .fcc-player-grid{grid-template-columns:repeat(2,1fr);}
-  .fcc-qual-grid{grid-template-columns:repeat(2,1fr);}
+  .fcc-qual-grid{grid-template-columns:repeat(1,1fr);}
 }
 
 @media (max-width:768px){
