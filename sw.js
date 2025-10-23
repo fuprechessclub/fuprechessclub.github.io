@@ -15,7 +15,12 @@ const ASSETS = [
   "/assets/js/matches.js", "/assets/js/script.js",
   "/manifest.json",
   "/assets/icons/fupreChessClub-icon-192.png",
-  "/assets/icons/fupreChessClub-icon-512.png"
+  "/assets/icons/fupreChessClub-icon-512.png",
+"/assets/css/all.min.css",
+"/assets/webfonts/fa-solid-900.woff2",
+"/assets/webfonts/fa-regular-400.woff2",
+"/assets/webfonts/fa-brands-400.woff2",
+"/assets/webfonts/fa-v4compatibility.woff2"
 
 ];
 
