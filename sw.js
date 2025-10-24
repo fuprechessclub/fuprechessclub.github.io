@@ -6,6 +6,9 @@
 // • Full offline caching retained
 // ==========================================================
 
+importScripts('https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js');
+
+
 const CACHE_NAME = "fcc-cache-v3.1"; // bump version to trigger new SW
 const ASSETS = [
   "/", "/index.html",
