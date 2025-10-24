@@ -1,10 +1,3 @@
-// ==========================================================
-// FUPRE Chess Club – App Service Worker 
-// ----------------------------------------------------------
-// • Detects new version and notifies clients
-// • Prompts user to reload manually (no infinite loop)
-// • Full offline caching retained
-// ==========================================================
 
 importScripts('https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js');
 
