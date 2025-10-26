@@ -64,7 +64,7 @@
       "points": 34,
       "eventsPlayed": 5,
       "bestFinish": "4th (Grand Rapid)",
-      "status": "Not Qualified"
+      "status": "Did Not Qualify"
     },
     {
       "id": 8,
@@ -82,7 +82,7 @@
       "points": 29,
       "eventsPlayed": 4,
       "bestFinish": "Top 8 (Grand Rapid)",
-      "status": "Not Qualified"
+      "status": "Did Not Qualify"
     },
     {
       "id": 10,
@@ -100,7 +100,7 @@
       "points": 22,
       "eventsPlayed": 3,
       "bestFinish": "Top 12 (⚡Blitz)",
-      "status": "Not Qualified"
+      "status": "Did Not Qualify"
     },
     {
       "id": 12,
@@ -109,7 +109,7 @@
       "points": 18,
       "eventsPlayed": 2,
       "bestFinish": "Top 16 (⚡Blitz)",
-      "status": "Not Qualified"
+      "status": "Did Not Qualify"
     },
     {
       "id": 13,
@@ -118,7 +118,7 @@
       "points": 15,
       "eventsPlayed": 2,
       "bestFinish": "Top 16 (Grand Rapid)",
-      "status": "Not Qualified"
+      "status": "Did Not Qualify"
     },
     {
       "id": 14,
@@ -127,7 +127,7 @@
       "points": 12,
       "eventsPlayed": 2,
       "bestFinish": "Top 20 (⚡Blitz)",
-      "status": "Not Qualified"
+      "status": "Did Not Qualify"
     }
   ]
 }
