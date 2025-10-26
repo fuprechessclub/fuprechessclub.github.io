@@ -1,15 +1,9 @@
-/* ==========================================================
-   FUPRE Chess Club – Install Controller (Smart Update Banner)
-   ----------------------------------------------------------
-   • Modern “Update available — Refresh” banner (no confirm())
-   ========================================================== */
-
 (() => {
   const cta = document.getElementById("install-btn");
   const ctaLabel = cta?.querySelector(".label");
   const toast = document.getElementById("toast");
 
-  const SHOW_DELAY_AFTER_SPLASH_MS = 7000;
+  const SHOW_DELAY_AFTER_SPLASH_MS = 5000;
   const LS_PWA_FLAG = "fcc_pwa_installed_v1";
   const ACTION = { idle: "idle", installing: "installing" };
   let state = ACTION.idle;
@@ -116,7 +110,7 @@
     banner.id = "update-banner";
     banner.innerHTML = `
       <div class="update-banner-content">
-        <span>🔄 New version available</span>
+        <span>New version available</span>
         <button id="refresh-btn">Refresh</button>
       </div>
     `;
