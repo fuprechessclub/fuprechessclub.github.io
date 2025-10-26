@@ -29,14 +29,18 @@ if (elYear) elYear.textContent = new Date().getFullYear();
 /* =========================
    Helpers
    ========================= */
-
+   
 /** Convert a status string to a class suffix */
 function statusClass(status) {
-  const s = (status || '').toLowerCase();
-  if (s.includes('qualified')) return 'fcc-status--q';
-  if (s.includes('contention')) return 'fcc-status--c';
-  return 'fcc-status--n'; // Not Qualified or everything else
+  const s = (status || '').trim().toLowerCase();
+
+  if (['qualified', 'q'].includes(s)) return 'fcc-status--q';
+  if (['in contention', 'ic'].includes(s)) return 'fcc-status--c';
+  if (['did not qualify', 'dnq', 'not qualified'].includes(s)) return 'fcc-status--n';
+
+  return 'fcc-status--n';
 }
+
 
 /** Sort + rank the array. Returns a new array. */
 function computeStandings(players, sortMode = 'points') {
