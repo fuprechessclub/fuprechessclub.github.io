@@ -525,14 +525,16 @@ body.dark .logo-glow { text-shadow: 0 0 1px var(--glow), 0 0 1px var(--glow), 0 
 }
 
 
-/* ================
-   Gallery Section
-================ */
+
+/* ===========================
+   Auto-Slider Gallery
+=========================== */
 .gallery {
   padding: 4rem 2rem;
   text-align: center;
   background: var(--bg-soft);
   color: var(--text);
+  position: relative;
 }
 
 .gallery h2 {
@@ -540,83 +542,110 @@ body.dark .logo-glow { text-shadow: 0 0 1px var(--glow), 0 0 1px var(--glow), 0 
   color: var(--accent);
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
-
-/* Shimmer placeholder */
-.gallery-item {
+/* --- Slider Container --- */
+.slider-container {
   position: relative;
+  max-width: 900px;
+  margin: 0 auto;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid var(--border);
-  cursor: pointer;
-
-  background: linear-gradient(
-    90deg,
-    var(--bg-soft) 25%,
-    var(--border) 50%,
-    var(--bg-soft) 75%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite linear;
-
-  min-height: 150px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
-/* Stop shimmer when image loads */
-.gallery-item img {
+/* --- Track (holds all slides) --- */
+.slider-track {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+  width: 100%;
+}
+
+/* --- Each Slide --- */
+.slide {
+  min-width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  animation: none;
-  background: none;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
-/* Keyframes for shimmer */
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
+.slide:hover img {
+  transform: scale(1.05);
 }
 
-/* Hover zoom effect (desktop only) */
-@media (min-width: 769px) {
-  .gallery-item:hover img {
-    transform: scale(1.08);
-  }
+/* --- Navigation Arrows --- */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.6rem;
+  transition: background 0.3s;
+  z-index: 2;
 }
 
+.slider-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
 
-/* Tap zoom effect (mobile) */
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
+
+/* --- Dots --- */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.slider-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.slider-dots button.active {
+  background: var(--accent);
+  transform: scale(1.2);
+}
+
+/* --- Responsive --- */
 @media (max-width: 768px) {
-  .gallery-item:active img,
-  .gallery-item:focus img {
-    transform: scale(1.05);   /* slightly smaller zoom than desktop */
+  .slide {
+    height: 250px;
+  }
+
+  .slider-btn {
+    padding: 8px 12px;
+    font-size: 1.2rem;
   }
 }
 
-
-
-/* ================
-   Lightbox
-================ */
+/* ===========================
+   Lightbox (unchanged)
+=========================== */
 .lightbox {
-  display: none;              /* hidden by default */
+  display: none;
   position: fixed;
   top: 0; left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
   background: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
@@ -638,9 +667,7 @@ body.dark .logo-glow { text-shadow: 0 0 1px var(--glow), 0 0 1px var(--glow), 0 
   cursor: pointer;
 }
 
-/* Lightbox nav buttons */
-.prev-btn,
-.next-btn {
+.prev-btn, .next-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -660,7 +687,6 @@ body.dark .logo-glow { text-shadow: 0 0 1px var(--glow), 0 0 1px var(--glow), 0 
 .next-btn:hover {
   background: rgba(0,0,0,0.6);
 }
-
 
 
 /*=================
