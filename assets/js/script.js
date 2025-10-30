@@ -429,7 +429,6 @@ document.addEventListener("DOMContentLoaded", () => {
 (function devCredit(){
   if (document.getElementById('dev-credit')) return; // avoid duplicates
 
-  // 🔧 Change this to your real portfolio URL
   const PORTFOLIO_URL = 'https://clarketj.github.io/ClarkeTJ-portfolio/';
 
   const DEV_TAGLINE = 'Code the plan. Checkmate the bugs.';
@@ -483,7 +482,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === 'Escape') setOpen(false);
   });
 
-  // celebrate action (reuses your confetti if available)
+  // celebrate action (reuses confetti if available)
   celebrateBtn?.addEventListener('click', () => {
     if (typeof fireMiniConfetti === 'function') {
       fireMiniConfetti(wrap);

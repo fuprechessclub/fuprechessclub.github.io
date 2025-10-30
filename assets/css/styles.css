@@ -1345,6 +1345,7 @@ mark {
   border: none;
   border-radius: 6px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: 0.3s ease;
 }
