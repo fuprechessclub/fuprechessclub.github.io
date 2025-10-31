@@ -4,7 +4,7 @@
     "department": "Chemical Eng",
     "level": "Alumni",
     "rapid": 2325,
-    "blitz": 2042,
+    "blitz": 2027,
     "achievements": [
       "🥇 1×  VC Chess Cup Champion"
     ]
@@ -21,7 +21,7 @@
     "name": "Alex",
     "department": "Marine Eng",
     "level": "Alumni",
-    "rapid": 2319,
+    "rapid": 2322,
     "blitz": 2134,
     "achievements": [
       "🥇 2×  VC Chess Cup Champion"
@@ -32,8 +32,8 @@
     "name": "Hasel",
     "department": "Chemical Eng",
     "level": 300,
-    "rapid": 1683,
-    "blitz": 1646,
+    "rapid": 1695,
+    "blitz": 1677,
     "achievements": [
       "🥇 1x FCL Winner",
       "⭐ Rising Star"
@@ -67,7 +67,7 @@
     "department": "Cyber Security",
     "level": 200,
     "rapid": 1928,
-    "blitz": 1794,
+    "blitz": 1774,
     "achievements": [
       "🥇 1x NACOS Chess Champion"
     ]
@@ -77,8 +77,8 @@
     "name": "Martins",
     "department": "Mech Eng",
     "level": 400,
-    "rapid": 1968,
-    "blitz": 1968,
+    "rapid": 1977,
+    "blitz": 1858,
     "achievements": [
         "🥇 1x NSE Chess Champion"
     ]
@@ -111,8 +111,8 @@
     "name": "Chris",
     "department": "Comp Sci",
     "level": "Alumni",
-    "rapid": 1469,
-    "blitz": 1544,
+    "rapid": 1493,
+    "blitz": 1586,
     "achievements": []
   },
 
@@ -121,8 +121,8 @@
     "name": "Nelson",
     "department": "SLT",
     "level": 300,
-    "rapid": 1431,
-    "blitz": 1414,
+    "rapid": 1444,
+    "blitz": 1419,
     "achievements": []
   },
 
@@ -131,7 +131,7 @@
     "name": "Prevail",
     "department": "Mech Eng",
     "level": "Alumni",
-    "rapid": 1929,
+    "rapid": 1883,
     "blitz": 1658,
     "achievements": []
   },
@@ -247,8 +247,8 @@
     "name": "Godbless",
     "department": "Mech Eng",
     "level": "Alumni",
-    "rapid": 1803,
-    "blitz": 1731,
+    "rapid": 1788,
+    "blitz": 1798,
     "achievements": []
   }
 ]
