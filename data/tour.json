@@ -3,131 +3,135 @@
   "startDate": "2025-12-01",
   "endDate": "2026-02-25",
   "players": [
+
     {
       "id": 1,
-      "name": "Godbless",
-      "photo": "assets/imgs/profile_pics/agent55.jpg",
-      "points": 52,
-      "eventsPlayed": 7,
-      "bestFinish": "1st (Grand Rapid)",
+      "name": "Destiny",
+      "photo": "assets/imgs/profile_pics/agent22.jpg",
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
       "status": "IC"
     },
     {
       "id": 2,
       "name": "Alex",
       "photo": "assets/imgs/profile_pics/jinwoo3.jpg",
-      "points": 57,
-      "eventsPlayed": 6,
-      "bestFinish": "1st (⚡Blitz)",
-      "status": "Q"
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
+      "status": "IC"
     },
     {
       "id": 3,
-      "name": "ClarkeTJ",
-      "photo": "assets/imgs/profile_pics/TJ1.png",
-      "points": 52,
-      "eventsPlayed": 7,
-      "bestFinish": "2nd (Grand Rapid)",
-      "status": "Q"
+      "name": "Martins",
+      "photo": "assets/imgs/profile_pics/martins.jpg",
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
+      "status": "IC"
     },
     {
       "id": 4,
-      "name": "Hasel",
-      "photo": "assets/imgs/profile_pics/agent11.jpg",
-      "points": 42,
-      "eventsPlayed": 6,
-      "bestFinish": "1st (Grand Rapid)",
+      "name": "Jesse",
+      "photo": "assets/imgs/profile_pics/gojo2.jpg",
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
       "status": "IC"
     },
     {
       "id": 5,
-      "name": "Destiny",
-      "photo": "assets/imgs/profile_pics/agent22.jpg",
-      "points": 50,
-      "eventsPlayed": 6,
-      "bestFinish": "2nd (Grand Rapid)",
+      "name": "Prevail",
+      "photo": "assets/imgs/profile_pics/gojo4.jpg",
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
       "status": "IC"
     },
     {
       "id": 6,
-      "name": "Chris",
-      "photo": "assets/imgs/profile_pics/jinwoo2.jpg",
-      "points": 37,
-      "eventsPlayed": 5,
-      "bestFinish": "4th (⚡Blitz)",
+      "name": "Godbless",
+      "photo": "assets/imgs/profile_pics/agent55.jpg",
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
       "status": "IC"
     },
-    {
+        {
       "id": 7,
-      "name": "Fortune",
-      "photo": "assets/imgs/profile_pics/agent77.jpg",
-      "points": 34,
-      "eventsPlayed": 5,
-      "bestFinish": "4th (Grand Rapid)",
-      "status": "DNQ"
+      "name": "Noah",
+      "photo": "assets/imgs/profile_pics/noah.jpg",
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
+      "status": "IC"
     },
     {
       "id": 8,
-      "name": "Jesse",
-      "photo": "assets/imgs/profile_pics/gojo2.jpg",
-      "points": 39,
-      "eventsPlayed": 5,
-      "bestFinish": "3rd (⚡Blitz)",
+      "name": "Hasel",
+      "photo": "assets/imgs/profile_pics/agent11.jpg",
+      "points": 0,
+      "eventsPlayed": 6,
+      "bestFinish": "-",
+      "status": "IC"
+    },
+    
+    {
+      "id": 9,
+      "name": "ClarkeTJ",
+      "photo": "assets/imgs/profile_pics/TJ1.png",
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
       "status": "IC"
     },
     {
-      "id": 9,
-      "name": "Noah",
-      "photo": "assets/imgs/profile_pics/noah.jpg",
-      "points": 29,
-      "eventsPlayed": 4,
-      "bestFinish": "Top 8 (Grand Rapid)",
-      "status": "DNQ"
-    },
-    {
       "id": 10,
-      "name": "Martins",
-      "photo": "assets/imgs/profile_pics/martins.jpg",
-      "points": 55,
-      "eventsPlayed": 7,
-      "bestFinish": "1st (⚡Blitz)",
-      "status": "Q"
+      "name": "Fortune",
+      "photo": "assets/imgs/profile_pics/agent77.jpg",
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
+      "status": "IC"
     },
+    
     {
       "id": 11,
-      "name": "Prevail",
-      "photo": "assets/imgs/profile_pics/gojo4.jpg",
-      "points": 22,
-      "eventsPlayed": 3,
-      "bestFinish": "Top 12 (⚡Blitz)",
-      "status": "DNQ"
+      "name": "Chris",
+      "photo": "assets/imgs/profile_pics/jinwoo2.jpg",
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
+      "status": "IC"
     },
+    
     {
       "id": 12,
       "name": "Nelson",
       "photo": "assets/imgs/profile_pics/gojo6.jpg",
-      "points": 18,
-      "eventsPlayed": 2,
-      "bestFinish": "Top 16 (⚡Blitz)",
-      "status": "DNQ"
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
+      "status": "IC"
     },
     {
       "id": 13,
       "name": "Draken.",
       "photo": "assets/imgs/profile_pics/agent44.jpg",
-      "points": 15,
-      "eventsPlayed": 2,
-      "bestFinish": "Top 16 (Grand Rapid)",
-      "status": "DNQ"
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
+      "status": "IC"
     },
     {
       "id": 14,
       "name": "Jeffery",
       "photo": "assets/imgs/profile_pics/agent45.jpg",
-      "points": 12,
-      "eventsPlayed": 2,
-      "bestFinish": "Top 20 (⚡Blitz)",
-      "status": "DNQ"
+      "points": 0,
+      "eventsPlayed": 0,
+      "bestFinish": "-",
+      "status": "IC"
     }
   ]
 }
