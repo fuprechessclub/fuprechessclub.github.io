@@ -645,7 +645,7 @@
       "playerA": "Destiny",
       "playerB": "Hasel",
       "result": "0.5 - 0.5",
-      "date": "2025-09-12",
+      "date": "2025-09-09",
       "event": "Rated Match",
       "timeControl": "Rapid"
     },
@@ -2554,6 +2554,129 @@
       "event": "Rated Match",
       "timeControl": "Rapid"
     },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Prevail",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Prevail",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Prevail",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3210,7 +3333,71 @@
       "playerA": "Orukpe",
       "playerB": "Alex",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
+      "event": "FCL Closing Tournament",
+      "timeControl": "Blitz"
+    },
+    {
+      "playerA": "Ebube",
+      "playerB": "Prevail",
+      "result": "0 - 1",
+      "date": "2025-04-09",
+      "event": "FCL Closing Tournament",
+      "timeControl": "Blitz"
+    },
+    {
+      "playerA": "Martins",
+      "playerB": "Ebube",
+      "result": "0 - 1",
+      "date": "2025-04-09",
+      "event": "FCL Closing Tournament",
+      "timeControl": "Blitz"
+    },
+    {
+      "playerA": "Ebube",
+      "playerB": "Jesse",
+      "result": "0 - 1",
+      "date": "2025-04-09",
+      "event": "FCL Closing Tournament",
+      "timeControl": "Blitz"
+    },
+    {
+      "playerA": "Ebube",
+      "playerB": "Alex",
+      "result": "0 - 1",
+      "date": "2025-04-09",
+      "event": "FCL Closing Tournament",
+      "timeControl": "Blitz"
+    },
+    {
+      "playerA": "Ebube",
+      "playerB": "Tsegbemi",
+      "result": "0 - 1",
+      "date": "2025-04-09",
+      "event": "FCL Closing Tournament",
+      "timeControl": "Blitz"
+    },
+    {
+      "playerA": "Noah",
+      "playerB": "Ebube",
+      "result": "1 - 0",
+      "date": "2025-04-09",
+      "event": "FCL Closing Tournament",
+      "timeControl": "Blitz"
+    },
+    {
+      "playerA": "Ebube",
+      "playerB": "Destiny",
+      "result": "0 - 1",
+      "date": "2025-04-09",
+      "event": "FCL Closing Tournament",
+      "timeControl": "Blitz"
+    },
+    {
+      "playerA": "Hasel",
+      "playerB": "Ebube",
+      "result": "0 - 1",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3218,7 +3405,7 @@
       "playerA": "Alex",
       "playerB": "Martins",
       "result": "1 - 0",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3226,7 +3413,7 @@
       "playerA": "Martins",
       "playerB": "Alex",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3234,7 +3421,7 @@
       "playerA": "Orukpe",
       "playerB": "Destiny",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3242,7 +3429,7 @@
       "playerA": "Godbless",
       "playerB": "Noah",
       "result": "0.5 - 0.5",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3250,7 +3437,7 @@
       "playerA": "Chris",
       "playerB": "Hasel",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3258,7 +3445,7 @@
       "playerA": "Martins",
       "playerB": "Tsegbemi",
       "result": "1 - 0",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3266,7 +3453,7 @@
       "playerA": "Draken",
       "playerB": "ClarkeTJ",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3274,7 +3461,7 @@
       "playerA": "Godbless",
       "playerB": "Destiny",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3282,7 +3469,7 @@
       "playerA": "Orukpe",
       "playerB": "Hasel",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3290,7 +3477,7 @@
       "playerA": "Noah",
       "playerB": "Martins",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3298,7 +3485,7 @@
       "playerA": "Chris",
       "playerB": "Prevail",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3306,7 +3493,7 @@
       "playerA": "Tsegbemi",
       "playerB": "Jesse",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3314,7 +3501,7 @@
       "playerA": "ClarkeTJ",
       "playerB": "Alex",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3322,7 +3509,7 @@
       "playerA": "Hasel",
       "playerB": "Godbless",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3330,7 +3517,7 @@
       "playerA": "Orukpe",
       "playerB": "Prevail",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3338,7 +3525,7 @@
       "playerA": "Destiny",
       "playerB": "Martins",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3346,7 +3533,7 @@
       "playerA": "Jesse",
       "playerB": "Noah",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3354,7 +3541,7 @@
       "playerA": "Draken",
       "playerB": "Chris",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3362,7 +3549,7 @@
       "playerA": "Hasel",
       "playerB": "Martins",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3370,7 +3557,7 @@
       "playerA": "Prevail",
       "playerB": "Godbless",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3378,7 +3565,7 @@
       "playerA": "Destiny",
       "playerB": "Jesse",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3386,7 +3573,7 @@
       "playerA": "Orukpe",
       "playerB": "Draken",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3394,7 +3581,7 @@
       "playerA": "Chris",
       "playerB": "ClarkeTJ",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3402,7 +3589,7 @@
       "playerA": "Prevail",
       "playerB": "Martins",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3410,7 +3597,7 @@
       "playerA": "Hasel",
       "playerB": "Jesse",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3418,7 +3605,7 @@
       "playerA": "Draken",
       "playerB": "Godbless",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3426,7 +3613,7 @@
       "playerA": "Orukpe",
       "playerB": "ClarkeTJ",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3434,7 +3621,7 @@
       "playerA": "Tsegbemi",
       "playerB": "Alex",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3442,7 +3629,7 @@
       "playerA": "ClarkeTJ",
       "playerB": "Godbless",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3450,7 +3637,7 @@
       "playerA": "Draken",
       "playerB": "Martins",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3458,7 +3645,7 @@
       "playerA": "Prevail",
       "playerB": "Jesse",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3466,7 +3653,7 @@
       "playerA": "Noah",
       "playerB": "Tsegbemi",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3474,7 +3661,7 @@
       "playerA": "Chris",
       "playerB": "Alex",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3482,7 +3669,7 @@
       "playerA": "Draken",
       "playerB": "Jesse",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3490,7 +3677,7 @@
       "playerA": "ClarkeTJ",
       "playerB": "Martins",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3498,7 +3685,7 @@
       "playerA": "Tsegbemi",
       "playerB": "Destiny",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3506,7 +3693,7 @@
       "playerA": "Orukpe",
       "playerB": "Chris",
       "result": "1 - 0",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3514,7 +3701,7 @@
       "playerA": "Noah",
       "playerB": "Alex",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3522,7 +3709,7 @@
       "playerA": "Jesse",
       "playerB": "ClarkeTJ",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3530,7 +3717,7 @@
       "playerA": "Hasel",
       "playerB": "Tsegbemi",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3538,7 +3725,7 @@
       "playerA": "Chris",
       "playerB": "Godbless",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -3546,7 +3733,7 @@
       "playerA": "Noah",
       "playerB": "Destiny",
       "result": "0 - 1",
-      "date": "2025-04-12",
+      "date": "2025-04-09",
       "event": "FCL Closing Tournament",
       "timeControl": "Blitz"
     },
@@ -7174,6 +7361,246 @@
       "playerB": "Martins",
       "result": "1 - 0",
       "date": "2025-10-30",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Martins",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Alex",
+      "result": "0 - 1",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Martins",
+      "result": "0 - 1",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Ebube",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Ebube",
+      "playerB": "Hasel",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Godbless",
+      "playerB": "Alex",
+      "result": "0 - 1",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Ebube",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Martins",
+      "playerB": "Alex",
+      "result": "0 - 1",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Godbless",
+      "playerB": "Ebube",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Godbless",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Hasel",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Martins",
+      "playerB": "Hasel",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Ebube",
+      "playerB": "Alex",
+      "result": "0.5 - 0.5",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Ebube",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Martins",
+      "playerB": "Ebube",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Godbless",
+      "playerB": "Hasel",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Martins",
+      "result": "0 - 1",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Ebube",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-11-01",
+      "event": "Blitz 4 fishes",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Hasel",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Hasel",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Alex",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Martins",
+      "playerB": "Hasel",
+      "result": "1 - 0",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Martins",
+      "playerB": "Hasel",
+      "result": "0 - 1",
+      "date": "2025-11-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Martins",
+      "playerB": "Hasel",
+      "result": "0 - 1",
+      "date": "2025-11-01",
       "event": "Rated Match",
       "timeControl": "Blitz"
     },
