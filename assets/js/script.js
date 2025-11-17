@@ -424,7 +424,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /* =========================================
-         Developer Credit Widget 
+         Developer Credit Widget
 ========================================= */
 (function devCredit(){
   if (document.getElementById('dev-credit')) return; // avoid duplicates
