@@ -26,15 +26,14 @@
     });
   </script>
 
-
   <meta name="google-site-verification" content="55AZ8KXOTv3Uglrl0Q4SAnywHfbcs8tfrrTMOa3XYwE" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="index, follow">
-<meta name="googlebot" content="index, follow">
-<meta name="author" content="Fupre Chess Club">
-<meta name="application-name" content="Fupre Chess Club">
-<meta name="referrer" content="origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="author" content="Fupre Chess Club">
+  <meta name="application-name" content="Fupre Chess Club">
+  <meta name="referrer" content="origin-when-cross-origin">
 
   <title>Fupre Chess Club</title>
 
@@ -70,7 +69,6 @@
   <!-- Site CSS & scripts -->
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/script.js"></script>
-
 </head>
 
 <body class="preload">
@@ -81,6 +79,36 @@
       <div class="splash-progress"></div>
     </div>
   </div>
+
+  <!-- Floating particles background -->
+  <div class="particles-bg">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+
+<!-- Floating Chess Pieces Background -->
+<div class="fx-chess-bg">
+  <span class="chess-piece cp-1">♞</span> <!-- knight -->
+  <span class="chess-piece cp-2">♛</span> <!-- queen -->
+  <span class="chess-piece cp-3">♖</span> <!-- rook -->
+  <span class="chess-piece cp-4">♔</span> <!-- king -->
+  <span class="chess-piece cp-5">♙</span> <!-- pawn -->
+</div>
+
 
   <!-- Navbar -->
   <header class="navbar">
@@ -113,19 +141,30 @@
   </header>
 
   <main class="main-content">
-    <section class="hero">
-      <h1>Welcome to <span>Fupre Chess Club</span></h1>
-      <p style="color:white;">Sharpen your mind, compete with the best, and be part of our growing chess community.</p>
-      <a href="#events" class="btn bounce">See Upcoming Events</a>
+    <!-- ================= HERO WITH SIMPLE ROTATOR ================= -->
+   <section class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-rotator-title">
+      <span class="hero-rotator-set active">Welcome to Fupre Chess Club</span>
+      <span class="hero-rotator-set">Where strategy meets community</span>
+      <span class="hero-rotator-set">Every move tells your story</span>
+    </h1>
 
-      <!-- Install / Update CTA -->
-      <button id="install-btn" class="is-hidden" aria-live="polite">
-        <span class="icon">📲</span>
-        <span class="label">Install App</span>
-      </button>
+    <p class="hero-subtitle">
+      Sharpen your mind, compete with the best, and be part of our growing chess community.
+    </p>
 
-      <div id="toast" aria-live="polite" aria-atomic="true"></div>
-    </section>
+    <a href="#events" class="btn bounce">See Upcoming Events</a>
+
+    <!-- Install / Update CTA -->
+    <button id="install-btn" class="is-hidden" aria-live="polite">
+      <span class="icon">📲</span>
+      <span class="label">Install App</span>
+    </button>
+
+    <div id="toast" aria-live="polite" aria-atomic="true"></div>
+  </div>
+</section>
 
     <section class="about">
       <h2>About Us</h2>
@@ -133,9 +172,6 @@
       We host regular tournaments, training sessions, and social games to promote the love of chess.</p>
     </section>
 
-
-
-    
     <!-- Events -->
     <section class="events" id="events">
       <h2>Upcoming Events</h2>
@@ -201,137 +237,133 @@
     </section>
   </main>
 
-  
-    <div class="game-panels">
-<article class="card game-card" aria-label="Chess Adventure">
-  <h3>Knightly</h3>
-  <div class="game-embed">
-    <iframe src="games/chess-adventure/chess-adventure.html" title="Chess Adventure" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+  <div class="game-panels">
+    <article class="card game-card" aria-label="Chess Adventure">
+      <h3>Knightly</h3>
+      <div class="game-embed">
+        <iframe src="games/chess-adventure/chess-adventure.html" title="Chess Adventure" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+      </div>
+      <div class="game-actions">
+        <a class="btn" href="games/chess-adventure/chess-adventure.html" target="_blank" rel="noopener">Open Fullscreen</a>
+      </div>
+    </article>
   </div>
-  <div class="game-actions">
-    <a class="btn" href="games/chess-adventure/chess-adventure.html" target="_blank" rel="noopener">Open Fullscreen</a>
-  </div>
-</article>
-</div>
 
+  <!-- ========== Gallery Section (Auto-Slider + Lightbox) ========== -->
+  <section class="gallery">
+    <h2><i class="fa-solid fa-camera-retro"></i> Club Highlights</h2>
 
-<!-- ========== Gallery Section (Auto-Slider + Lightbox) ========== -->
-<section class="gallery">
-  <h2><i class="fa-solid fa-camera-retro"></i> Club Highlights</h2>
+    <div class="slider-container">
+      <div class="slider-track">
+        <div class="slide"><img src="assets/imgs/fcl-events/fcl-ceremony1.jpg" alt="FCL Ceremony"></div>
+        <div class="slide"><img src="assets/imgs/fcl-events/fcl-ceremony4.jpg" alt="FCL Ceremony"></div>
+        <div class="slide"><img src="assets/imgs/event_imgs/ecobank.jpg" alt="Ecobank Tourney"></div>
+        <div class="slide"><img src="assets/imgs/event_imgs/fcc-nse7.jpg" alt="FCC-NSE"></div>
+        <div class="slide"><img src="assets/imgs/event_imgs/fcc-nse5.jpg" alt="FCC-NSE"></div>
+      </div>
 
-  <div class="slider-container">
-    <div class="slider-track">
-      <div class="slide"><img src="assets/imgs/fcl-events/fcl-ceremony1.jpg" alt="FCL Ceremony"></div>
-      <div class="slide"><img src="assets/imgs/fcl-events/fcl-ceremony4.jpg" alt="FCL Ceremony"></div>
-      <div class="slide"><img src="assets/imgs/event_imgs/ecobank.jpg" alt="Ecobank Tourney"></div>
-      <div class="slide"><img src="assets/imgs/event_imgs/fcc-nse7.jpg" alt="FCC-NSE"></div>
-      <div class="slide"><img src="assets/imgs/event_imgs/fcc-nse5.jpg" alt="FCC-NSE"></div>
+      <button class="slider-btn prev">&#10094;</button>
+      <button class="slider-btn next">&#10095;</button>
+
+      <div class="slider-dots"></div>
     </div>
+  </section>
 
-    <button class="slider-btn prev">&#10094;</button>
-    <button class="slider-btn next">&#10095;</button>
-
-    <div class="slider-dots"></div>
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn">&times;</span>
+    <span class="prev-btn">&#10094;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Expanded view">
+    <span class="next-btn">&#10095;</span>
   </div>
-</section>
 
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close-btn">&times;</span>
-  <span class="prev-btn">&#10094;</span>
-  <img class="lightbox-img" id="lightbox-img" src="" alt="Expanded view">
-  <span class="next-btn">&#10095;</span>
-</div>
+  <!-- === Partner & Designer Pre-Footer  -->
+  <section class="fcc-prefooter" aria-label="Partners and Brand Designer">
+    <div class="fcc-prefooter-grid">
 
-<!-- === Partner & Designer Pre-Footer  -->
-<section class="fcc-prefooter" aria-label="Partners and Brand Designer">
-  <div class="fcc-prefooter-grid">
+      <!-- Partner website card -->
+      <article class="fcc-card fcc-partner">
+        <header class="fcc-card-head">
+          <h3 class="fcc-card-title">Check out our Partner Website (FSM)</h3>
+          <p class="fcc-muted">We collaborate with Fupre Sports Media — give them a visit.</p>
+        </header>
 
-    <!-- Partner website card -->
-    <article class="fcc-card fcc-partner">
-      <header class="fcc-card-head">
-        <h3 class="fcc-card-title">Check out our Partner Website (FSM)</h3>
-        <p class="fcc-muted">We collaborate with Fupre Sports Media — give them a visit.</p>
-      </header>
+        <figure class="fcc-partner-hero">
+          <img
+            src="assets/imgs/fsmpic.png"
+            alt="Fupre Sports Media"
+            class="fcc-partner-img"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
 
-      <figure class="fcc-partner-hero">
-        <img
-          src="assets/imgs/fsmpic.png"
-          alt="Fupre Sports Media"
-          class="fcc-partner-img"
-          loading="lazy"
-          decoding="async"
-        />
-      </figure>
-
-      <div class="fcc-actions">
-        <a class="fcc-btn fcc-btn-accent"
-           href="https://fupre-sports-media-web.vercel.app"
-           target="_blank" rel="noopener">
-          Visit Fupre Sports Media
-        </a>
-      </div>
-    </article>
-
-    <!-- Brand designer card -->
-     
-    <article class="fcc-card fcc-designer">
-      <header class="fcc-card-head fcc-designer-head">
-        <div class="fcc-avatar" aria-hidden="true">MG</div>
-        <div>
-          <h3 class="fcc-card-title">Micoteck Graphics</h3>
-          <p class="fcc-muted">Brand &amp; Creative Design • Logos • Flyers</p>
+        <div class="fcc-actions">
+          <a class="fcc-btn fcc-btn-accent"
+             href="https://fupre-sports-media-web.vercel.app"
+             target="_blank" rel="noopener">
+            Visit Fupre Sports Media
+          </a>
         </div>
-      </header>
+      </article>
 
-      <ul class="fcc-chiplist" aria-label="Services">
-        <li class="fcc-chip">Logo Design</li>
-        <li class="fcc-chip">Flyers &amp; Posters</li>
-        <li class="fcc-chip">Social Media</li>
-        <li class="fcc-chip">Business Cards</li>
-        <li class="fcc-chip">Event Banners</li>
-      </ul>
+      <!-- Brand designer card -->
+      <article class="fcc-card fcc-designer">
+        <header class="fcc-card-head fcc-designer-head">
+          <div class="fcc-avatar" aria-hidden="true">MG</div>
+          <div>
+            <h3 class="fcc-card-title">Micoteck Graphics</h3>
+            <p class="fcc-muted">Brand &amp; Creative Design • Logos • Flyers</p>
+          </div>
+        </header>
 
-      <div class="fcc-contact">
-        <a class="fcc-btn" href="tel:+2347015752555">Call: +234 701 575 2555</a>
-        <a class="fcc-btn fcc-btn-outline"
-           href="https://wa.me/2347015752555"
-           target="_blank" rel="noopener">WhatsApp</a>
-        <a class="fcc-link" href="mailto:micoteck.graphics@gmail.com">
-          micoteck.graphics@gmail.com
-        </a>
-      </div>
-    </article>
+        <ul class="fcc-chiplist" aria-label="Services">
+          <li class="fcc-chip">Logo Design</li>
+          <li class="fcc-chip">Flyers &amp; Posters</li>
+          <li class="fcc-chip">Social Media</li>
+          <li class="fcc-chip">Business Cards</li>
+          <li class="fcc-chip">Event Banners</li>
+        </ul>
 
-    <article class="fcc-card fcc-designer">
-      <header class="fcc-card-head fcc-designer-head">
-        <div class="fcc-avatar" aria-hidden="true">Sam</div>
-        <div>
-          <h3 class="fcc-card-title">Sammib📸</h3>
-          <p class="fcc-muted">Creative Photoshoots • Video Shoots</p>
+        <div class="fcc-contact">
+          <a class="fcc-btn" href="tel:+2347015752555">Call: +234 701 575 2555</a>
+          <a class="fcc-btn fcc-btn-outline"
+             href="https://wa.me/2347015752555"
+             target="_blank" rel="noopener">WhatsApp</a>
+          <a class="fcc-link" href="mailto:micoteck.graphics@gmail.com">
+            micoteck.graphics@gmail.com
+          </a>
         </div>
-      </header>
+      </article>
 
-      <ul class="fcc-chiplist" aria-label="Services">
-        <li class="fcc-chip">Photoshoots</li>
-        <li class="fcc-chip">Pics &amp; Vids editing</li>
-      </ul>
+      <article class="fcc-card fcc-designer">
+        <header class="fcc-card-head fcc-designer-head">
+          <div class="fcc-avatar" aria-hidden="true">Sam</div>
+          <div>
+            <h3 class="fcc-card-title">Sammib📸</h3>
+            <p class="fcc-muted">Creative Photoshoots • Video Shoots</p>
+          </div>
+        </header>
 
-      <div class="fcc-contact">
-        <a class="fcc-btn" href="tel:+2348161842472">Call: +234 816 184 2472</a>
-        <a class="fcc-btn fcc-btn-outline"
-           href="https://wa.me/2348161842472"
-           target="_blank" rel="noopener">WhatsApp</a>
-        <a class="fcc-link" href="mailto:sammib@gmail.com">
-          sammib@gmail.com
-        </a>
-      </div>
-    </article>
+        <ul class="fcc-chiplist" aria-label="Services">
+          <li class="fcc-chip">Photoshoots</li>
+          <li class="fcc-chip">Pics &amp; Vids editing</li>
+        </ul>
 
-  </div>
-</section>
-<!-- === /Pre-Footer === -->
+        <div class="fcc-contact">
+          <a class="fcc-btn" href="tel:+2348161842472">Call: +234 816 184 2472</a>
+          <a class="fcc-btn fcc-btn-outline"
+             href="https://wa.me/2348161842472"
+             target="_blank" rel="noopener">WhatsApp</a>
+          <a class="fcc-link" href="mailto:sammib@gmail.com">
+            sammib@gmail.com
+          </a>
+        </div>
+      </article>
 
+    </div>
+  </section>
+  <!-- === /Pre-Footer === -->
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -354,24 +386,19 @@
         <p>Email: <a href="mailto:clarketejiri@gmail.com">fuprechessclub@gmail.com</a></p>
         <p>Phone: +234 810 306 1832</p>
 
-
-
-<div class="socials">
-  <a href="https://chat.whatsapp.com/48ZsqGDi1e8LCOyEpaTyOW?mode=ems_copy_h_t" target="_blank" class="social-icon">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-  <a href="https://www.youtube.com/@yourchessguy1" target="_blank" class="social-icon">
-    <i class="fa-brands fa-youtube"></i>
-  </a>
-  <a href="https://www.tiktok.com/@yourchessguy1?_t=ZM-8zyKCLQVusF&_r=1" target="_blank" class="social-icon">
-    <i class="fa-brands fa-tiktok"></i>
-  </a>
-  <a href="https://x.com/Clarke_Tj7?t=tElxGZO83zEM6JI7EQc4qg&s=08" target="_blank" class="social-icon">
-    <i class="fa-brands fa-x-twitter"></i>
-  </a>
-</div>
-
-
+        <div class="socials">
+          <a href="https://chat.whatsapp.com/48ZsqGDi1e8LCOyEpaTyOW?mode=ems_copy_h_t" target="_blank" class="social-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.youtube.com/@yourchessguy1" target="_blank" class="social-icon">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.tiktok.com/@yourchessguy1?_t=ZM-8zyKCLQVusF&_r=1" target="_blank" class="social-icon">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://x.com/Clarke_Tj7?t=tElxGZO83zEM6JI7EQc4qg&s=08" target="_blank" class="social-icon">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -380,7 +407,6 @@
       <p>&copy; 2025 Fupre Chess Club. All rights reserved.</p>
     </div>
   </footer>
-
 
   <!-- Splash controller -->
   <script>
@@ -427,24 +453,27 @@
   </script>
 
   <script>
-  // Check if Font Awesome loaded successfully
-  window.addEventListener("load", () => {
-    const testIcon = document.createElement("i");
-    testIcon.className = "fa-solid fa-check";
-    document.body.appendChild(testIcon);
+    // Check if Font Awesome loaded successfully
+    window.addEventListener("load", () => {
+      const testIcon = document.createElement("i");
+      testIcon.className = "fa-solid fa-check";
+      document.body.appendChild(testIcon);
 
-    // If no Font Awesome styles applied (icon shows as text or empty box), load local copy
-    const isFAWorking = window.getComputedStyle(testIcon).fontFamily.includes("Font Awesome");
-    if (!isFAWorking) {
-      const localFA = document.createElement("link");
-      localFA.rel = "stylesheet";
-      localFA.href = "/assets/css/all.min.css"; // local fallback path
-      document.head.appendChild(localFA);
-      console.warn("⚠️ Font Awesome CDN failed — local fallback loaded.");
-    }
-    testIcon.remove();
-  });
+      const isFAWorking = window.getComputedStyle(testIcon).fontFamily.includes("Font Awesome");
+      if (!isFAWorking) {
+        const localFA = document.createElement("link");
+        localFA.rel = "stylesheet";
+        localFA.href = "/assets/css/all.min.css"; // local fallback path
+        document.head.appendChild(localFA);
+        console.warn("⚠️ Font Awesome CDN failed — local fallback loaded.");
+      }
+      testIcon.remove();
+    });
+  </script>
+<script>
+
 </script>
+
 
 </body>
 </html>

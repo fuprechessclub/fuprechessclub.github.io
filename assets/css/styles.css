@@ -3929,4 +3929,225 @@ body.loaded .fcc-emoji i {
 .game-card .game-actions { margin-top: .75rem; display:flex; justify-content:flex-end; }
 .game-card h3 { margin-bottom:.5rem; }
 
+/* HERO rotating heading (no glitch) */
+.hero {
+  position: relative;
+  z-index: 1;
+}
 
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-tagline {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: #e9f7ff;
+  font-size: 1rem;
+  max-width: 40rem;
+}
+
+/* Rotating hero title */
+.hero-rotator-title {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;   /* tighter so it fits on one line */
+  color: #4fc3f7;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+  /* no overflow: hidden needed anymore */
+  line-height: 1.3;
+}
+
+/* Each sentence – SIMPLE VERSION */
+.hero-rotator-set {
+  display: none;                 /* hidden by default */
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.hero-rotator-set.active {
+  display: inline;               /* only active one is in flow */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* On very small screens allow wrapping so it doesn’t overflow */
+@media (max-width: 600px) {
+  .hero-rotator-title {
+    letter-spacing: 0.04em;
+  }
+}
+
+/* hero subtitle (sits nicely under the new title) */
+.hero-subtitle {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+/* particles background (your dot particles) */
+.particles-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #00ffe0;
+  box-shadow:
+    0 0 12px rgba(0, 255, 224, 0.9),
+    0 0 28px rgba(0, 123, 255, 0.7);
+  opacity: 0;
+  animation-name: floatUp-fcc;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatUp-fcc {
+  0% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20vh);
+    opacity: 0;
+  }
+}
+
+
+/* ===== Diagonal Light Streaks ===== */
+.fx-streaks-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.streak {
+  position: absolute;
+  width: 45%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 255, 255, 0.7),
+    rgba(79, 195, 247, 0.9),
+    transparent
+  );
+  opacity: 0.35;
+  transform: rotate(-18deg);
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+  animation: streakSlide 16s linear infinite;
+}
+
+/* different bands */
+.fx-streaks-bg .streak:nth-child(1) {
+  top: 10%;
+  left: -50%;
+  animation-duration: 18s;
+}
+.fx-streaks-bg .streak:nth-child(2) {
+  top: 40%;
+  left: -60%;
+  animation-duration: 20s;
+}
+.fx-streaks-bg .streak:nth-child(3) {
+  top: 70%;
+  left: -55%;
+  animation-duration: 22s;
+}
+.fx-streaks-bg .streak:nth-child(4) {
+  top: 85%;
+  left: -70%;
+  opacity: 0.25;
+  animation-duration: 26s;
+}
+
+@keyframes streakSlide {
+  0% {
+    transform: translateX(0) rotate(-18deg);
+  }
+  100% {
+    transform: translateX(220%) rotate(-18deg);
+  }
+}
+
+/* ===== Floating Chess Pieces (random, glowing, parallax-ready) ===== */
+.fx-chess-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+
+  /* mouse parallax (updated from JS) */
+  transform: translate3d(var(--parallax-x, 0), var(--parallax-y, 0), 0);
+  transition: transform 0.25s ease-out;
+}
+
+.chess-piece {
+  position: absolute;
+  font-size: 3.2rem;
+  color: #00ffe0;
+  opacity: 0.10;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 224, 0.7));
+  pointer-events: none;
+
+  /* two animations: drift + soft glow */
+  animation-name: chessDrift, glowPulse;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: normal, alternate;
+  animation-duration: var(--driftDur, 28s), 4s;
+}
+
+/* up-and-away drifting path */
+@keyframes chessDrift {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-40vh) translateX(15px) rotate(12deg) scale(1.05);
+  }
+  100% {
+    transform: translateY(-80vh) translateX(-10px) rotate(-2deg) scale(1);
+  }
+}
+
+/* glowing / breathing effect */
+@keyframes glowPulse {
+  0% {
+    opacity: 0.06;
+    text-shadow:
+      0 0 6px rgba(0, 255, 224, 0.4),
+      0 0 16px rgba(0, 123, 255, 0.0);
+  }
+  100% {
+    opacity: 0.16;
+    text-shadow:
+      0 0 10px rgba(0, 255, 224, 0.8),
+      0 0 26px rgba(0, 123, 255, 0.6);
+  }
+}

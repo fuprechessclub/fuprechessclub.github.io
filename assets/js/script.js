@@ -663,3 +663,116 @@ document.getElementById("dev-about")?.addEventListener("click", () => {
   });
 });
 
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    /* --- Dot particles (randomised) --- */
+    const particles = document.querySelectorAll(".particle");
+
+    particles.forEach((p) => {
+      p.style.left = Math.random() * 100 + "%";
+      const scale = 0.6 + Math.random() * 1.4;
+      p.style.transform = `scale(${scale}) translateY(110vh)`;
+      const delay = (Math.random() * 10).toFixed(1);
+      const duration = (12 + Math.random() * 10).toFixed(1);
+      p.style.animationDelay = `${delay}s`;
+      p.style.animationDuration = `${duration}s`;
+    });
+
+    /* --- Simple hero text rotator (no per-char stuff) --- */
+    const sets = document.querySelectorAll(".hero-rotator-set");
+    if (!sets.length) return;
+
+    let index = 0;
+
+    function show(idx) {
+      sets.forEach((el, i) => {
+        el.classList.toggle("active", i === idx);
+      });
+    }
+
+    // show first line
+    show(index);
+
+    // rotate every 5 seconds
+    setInterval(() => {
+      index = (index + 1) % sets.length;
+      show(index);
+    }, 5000);
+  });
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const chessContainer = document.querySelector(".fx-chess-bg");
+    if (!chessContainer) return;
+
+    // Unicode chess pieces to pick from
+    const PIECES = ["♞", "♛", "♖", "♔", "♙", "♜", "♝"];
+    const MAX_PIECES = 10;  // hard cap on how many can be on screen
+    const INITIAL_PIECES = 6;
+
+    function spawnChessPiece() {
+      if (!chessContainer) return;
+      if (chessContainer.childElementCount >= MAX_PIECES) return;
+
+      const span = document.createElement("span");
+      span.className = "chess-piece";
+
+      // pick a random chess symbol
+      span.textContent = PIECES[Math.floor(Math.random() * PIECES.length)];
+
+      // random horizontal position across screen
+      span.style.left = Math.random() * 100 + "%";
+
+      // start a bit below the viewport so they drift up into view
+      const bottomOffset = -10 - Math.random() * 20; // -10% to -30%
+      span.style.bottom = bottomOffset + "%";
+
+      // random drift duration (also used for lifetime)
+      const driftSeconds = 20 + Math.random() * 20; // 20–40s
+      span.style.setProperty("--driftDur", driftSeconds + "s");
+
+      // random delay so they don't all start together
+      const driftDelay = Math.random() * 5;  // 0–5s
+      const glowDelay = Math.random() * 2;   // 0–2s
+      span.style.animationDelay = driftDelay + "s, " + glowDelay + "s";
+
+      // random size (slight)
+      const sizeRem = 2.6 + Math.random() * 2.2;
+      span.style.fontSize = sizeRem + "rem";
+
+      chessContainer.appendChild(span);
+
+      // Remove after drift has finished (plus delay + small buffer)
+      const lifeMs = (driftSeconds + driftDelay + 2) * 1000;
+      setTimeout(() => {
+        span.remove();
+      }, lifeMs);
+    }
+
+    // initial batch
+    for (let i = 0; i < INITIAL_PIECES; i++) {
+      spawnChessPiece();
+    }
+
+    // continuous spawn
+    setInterval(() => {
+      spawnChessPiece();
+    }, 5000); // one new piece roughly every 5s
+
+    // mouse parallax: gently nudge background based on cursor
+    window.addEventListener("mousemove", (e) => {
+      const x = e.clientX / window.innerWidth - 0.5;  // -0.5 to 0.5
+      const y = e.clientY / window.innerHeight - 0.5;
+
+      // smaller values = gentler parallax
+      const maxOffset = 10; // pixels
+      const px = -(x * maxOffset);
+      const py = -(y * maxOffset);
+
+      chessContainer.style.setProperty("--parallax-x", px + "px");
+      chessContainer.style.setProperty("--parallax-y", py + "px");
+    });
+  });
+
