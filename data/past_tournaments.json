@@ -1,22 +1,6 @@
 {
   "completedTournaments": [
-    {
-      "id": "rapid2024",
-      "name": "Grand Rapid Tournament 2024",
-      "finalStandings": [
-        { "name": "Hasel", "points": 11 },
-        { "name": "Alex", "points": 10 },
-        { "name": "Destiny", "points": 9.5 },
-        { "name": "ClarkeTJ", "points": 9.5 },
-        { "name": "Martins", "points": 8 },
-        { "name": "Noah", "points": 7 },
-        { "name": "Jesse", "points": 6.5 },
-        { "name": "Fortune", "points": 5 },
-        { "name": "Chris", "points": 1.5 },
-        { "name": "Draken", "points": 0.5 },
-        { "name": "Vertex", "points": 0 }
-      ]
-    },
+  
     {
       "id": "blitz2025gw1",
       "name": "⚡Blitz Game-Week 1 2025",
