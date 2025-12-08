@@ -15,14 +15,37 @@
 }
 
 /* Kill page-wide horizontal scroll on this page */
-html, body.fcc{width:100%;max-width:100%;overflow-x:hidden;}
+html,
+body.fcc {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Keep site chrome sized correctly (no clipping of hamburger/menu) */
 body.fcc header,
-body.fcc footer{max-width:100%;}
-/*  Hamburger/menu fix: never clip the slide-out panel on FCC page */
+body.fcc footer {
+  max-width: 100%;
+}
+
+/* Hamburger/menu fix: never clip the slide-out panel on FCC page */
 body.fcc .navbar,
-body.fcc .nav-links{overflow:visible !important;}
-body.fcc .navbar{z-index:9999;}
+body.fcc .nav-links {
+  overflow: visible !important;
+}
+/* Make navbar fixed on FCC page */
+body.fcc .navbar {
+  position: fixed;   /* keep it permanently at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Push FCC content below the fixed navbar */
+body.fcc .fcc-wrapper {
+  padding-top: 80px;  /* tweak this to match your navbar height */
+}
 
 /* Wrapper */
 .fcc-wrapper{
