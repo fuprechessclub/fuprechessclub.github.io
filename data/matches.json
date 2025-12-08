@@ -2930,6 +2930,54 @@
       "event": "Rated Match",
       "timeControl": "Rapid"
     },
+{
+      "playerA": "Prevail",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-12-03",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Prevail",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-12-03",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Prevail",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-12-03",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Prevail",
+      "playerB": "Martins",
+      "result": "1 - 0",
+      "date": "2025-12-03",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-12-03",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
+{
+      "playerA": "Martins",
+      "playerB": "Prevail",
+      "result": "1 - 0",
+      "date": "2025-12-03",
+      "event": "Rated Match",
+      "timeControl": "Rapid"
+    },
 
 
 
@@ -9702,6 +9750,198 @@
       "playerB": "Nelson",
       "result": "1 - 0",
       "date": "2025-12-01",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Nelson",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Nelson",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Hasel",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Chris",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Chris",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Chris",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Chris",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Chris",
+      "playerB": "Godbless",
+      "result": "1 - 0",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Chris",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Chris",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Chris",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
+      "event": "Rated Match",
+      "timeControl": "Blitz"
+    },
+        {
+      "playerA": "Chris",
+      "playerB": "Godbless",
+      "result": "0 - 1",
+      "date": "2025-12-04",
       "event": "Rated Match",
       "timeControl": "Blitz"
     },

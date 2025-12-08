@@ -18,18 +18,24 @@
       ]
     },
     {
-      "id": "blitz2024",
-      "name": "⚡Blitz Tournament 2024",
+      "id": "blitz2025gw1",
+      "name": "⚡Blitz Game-Week 1 2025",
       "finalStandings": [
-        { "name": "Martins", "points": 8.5 },
-        { "name": "Alex", "points": 8 },
-        { "name": "Destiny", "points": 8 },
-        { "name": "ClarkeTJ", "points": 7.5 },
-        { "name": "Hasel", "points": 5.5 },
-        { "name": "Noah", "points": 5 },
-        { "name": "Jesse", "points": 5 },
-        { "name": "Fortune", "points": 4.5 },
-        { "name": "Chris", "points": 1.5 }
+        { "name": "Clinton", "points": 7 },
+        { "name": "Alex", "points": 6 },
+        { "name": "Mr. Akpos", "points": 5 },
+        { "name": "Mr. Marcus", "points": 4.5 },
+        { "name": "Godbless", "points": 4.5 },
+        { "name": "Mr. Micheal", "points": 4 },
+        { "name": "Prevail", "points": 4 },
+        { "name": "David", "points": 4 },
+        { "name": "Martins", "points": 3.5 },
+        { "name": "Hasel", "points": 3.5 },
+        { "name": "Mr. Emmanuel", "points": 3 },
+        { "name": "Chris", "points": 3 },
+        { "name": "Solomon", "points": 3 },
+        { "name": "Mr. Sunday", "points": 3 },
+        { "name": "Charles", "points": 3 }
       ]
     }
   ]
